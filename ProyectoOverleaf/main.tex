@@ -9,7 +9,9 @@
 
 \usepackage{fancyhdr}
  
-
+\usepackage{biblatex}
+ 
+\addbibresource{references.bib}
 
 \begin{document}
 
@@ -18,48 +20,110 @@
        \vspace*{1cm}
        
        
-       \LARGE
-       \textbf{Propuesta sin título aún}
+       \Large
+       \textbf{Manejo de simulaciones de cascadas atmosféricas extensas de CORSIKA - MAGNETOCOSMICS y procesamiento de resultados mediante interfaz de Python}
        
-       \large
-       \vspace{0.5cm}
-        ¿Subtítulo?
+       %\large
+       %\vspace{0.5cm}
+        %¿Subtítulo?
  
        \vspace{1.5cm}
  
-       Presentado por\\
+       \normalsize
+       Propuesta de tesis de pregrado para optar al título de \\
+       Físico
+       \vspace{1cm}
+       
+       
+       \large
        \textbf{Ricardo de León Barrios}
        
        \vspace{1cm}
        Director\\
-       \textbf{Luis A. Núñez}\\
-       títulos títulos
+       \textbf{Mauricio Suárez Durán}\\
+       Doctor en Ciencias Naturales (Física)
        
        \vspace{1cm}
        Codirector\\
-       \textbf{Mauricio Suárez Durán}\\
-       títulos títulos
+       \textbf{David Sierra Porta}\\
+       Posdoctorado Grupo de Investigación en Relatividad y Gravedad
  
        \vfill
        
-       \normalsize
-       Propuesta de tesis de pregrado para título de \\
-       Físico
+       
  
        \vspace{0.8cm}
  
-       \includegraphics[width=0.3\textwidth]{logo/logoUIS.png}
- 
        
+ 
+       \normalsize
        Escuela de Física\\
        Facultad de Ciencias\\
        Universidad Industrial de Santander\\
        Bucaramanga, Colombia\\
-       \today
+       2020\\
+       \vspace{0.3cm}
+       \includegraphics[width=0.3\textwidth]{logo/logoUIS.png}
  
    \end{center}
 \end{titlepage}
 
-\chapter*{Introducción}
+%---------------------------------------
+
+\section*{Resumen}
+
+
+%------------------------------------
+\section*{Introducción}
+
+
+
+%---------------------------
+\section*{Estado del arte}
+
+
+
+
+%--------------------------
+\section*{Marco teórico}
+
+\subsection*{Sobre rayos cósmicos y cascadas atmosféricas extensas}
+
+
+\subsection*{Sobre CORSIKA}
+
+
+\subsection*{Sobre MAGNETOCOSMICS}
+
+%---------------------------
+\section*{Plan de trabajo}
+
+\subsection*{Objetivos}
+
+\subsubsection*{General}
+\begin{itemize}
+    \item Desarrollar una interfaz mediante un \textit{script} programado en Python que permita controlar de forma sencilla aspectos relevantes de simulaciones de cascadas atmosféricas extensas de CORSIKA y MAGNETOCOSMICS, y realizar un procesamiento de resultados obtenidos en estas, para facilitar el monitoreo del clima espacial.
+\end{itemize}
+
+\subsubsection*{Específicos}
+Mediante el \textit{script} desarrollado en Python, se pretende lograr:
+\begin{itemize}
+    \item Controlar de forma sencilla y eficiente los parámetros de entrada, o \textit{inputs}, de las simulaciones de cascadas atmosféricas extensas de CORSIKA.
+    \item Controlar de forma sencilla y eficiente los parámetros de entrada necesarios para el uso de la herramienta MAGNETOCOSMICS, para el filtrado de partículas de las simulaciones de CORSIKA por medio de modelos de rigidez atmosférica dependientes del campo magnético terrestre.
+    \item Realizar procesamiento de datos con los resultados obtenidos de las simulaciones de CORSIKA - MAGNETOCOSMICS para facilitar el monitoreo del clima espacial. Esto incluye permitir la creación de gráficas de flujo de partículas, y el cálculo de magnitudes físicas relevantes que se puedan obtener a partir de estos datos.
+\end{itemize}
+
+\subsection*{Metodología}
+
+\subsection*{Cronograma}
+
+\subsection*{¿Presupuesto?}
+
+
+
+
+%----------------------------
+\printbibliography
+
 
 \end{document}
