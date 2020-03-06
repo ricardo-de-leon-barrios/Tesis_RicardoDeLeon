@@ -45,7 +45,7 @@
        \small
        \vspace{1cm}
        Director\\
-       \textbf{Mauricio Suárez Durán}$^1$\\
+       \textbf{Mauricio Suárez Durán}$^{1,2}$\\
        Doctor en Ciencias Naturales (Física)
        
        \vspace{1cm}
@@ -54,7 +54,8 @@
        Doctor en Física\\
        
        \vspace{1cm}
-       $^1$\textit{Grupo de Investigación en Relatividad y Gravitación, UIS}
+       $^1$\textit{Grupo de Investigación en Relatividad y Gravitación, UIS}\\
+       $^2$\textit{Grupo de Investigación Integrar, Universidad de Pamplona}
  
        \vfill
        
@@ -164,9 +165,9 @@ Los volcanes son puntos en la superficie de la Tierra por donde se puede present
 
 La vulcanología está estrechamente emparentada con el estudio de la corteza terrestre. La corteza es una delgada capa rocosa que cubre la superficie de la Tierra, siendo la capa más externa de la \textbf{geósfera} o tierra sólida. Se separa en dos tipos principales: oceánica y continental. La oceánica tiene un grosor promedio de 6 km, densidad promedio de 3 g cm$^{-3}$ y una edad de menos de 200 millones de años, mientras que la continental tiene un grosor promedio de 39 km, densidad promedio de 2,84 g cm$^{-3}$ y edad promedio de 1500 millones de años \cite{mooney20101}. La corteza terrestre \textit{flota} sobre el manto, teniendo este una densidad mayor. Puesto que la corteza oceánica tiene mayor densidad que la corteza continental, esta última \textit{flota más alto}, y los cuerpos masivos de agua se acumulan sobre la corteza oceánica. Esta condición de equilibrio entre corteza y manto se denomina isostasia. Los elementos más abundantes en la corteza son el oxígeno, el silicio y el aluminio, y los minerales más abundantes son los feldespatos, el cuarzo y los piroxenos \cite{anderson2010geomorphology}.
 
-En este trabajo estudiaremos la interacción de las partículas de las EAS con la materia de la corteza terrestre, la cual modelaremos como la denominada \textit{roca estándar}. Esta es una representación genérica del suelo bastante usada en la física de partículas y rayos cósmicos, y el estudio de escaneo de terrenos mediante muones, en la que se define que la roca está constituida por un material de densidad 2,65 g cm$^{-3}$ aproximadamente, y que cumple las relaciones $\langle Z/A \rangle=0.5$ y $\langle Z^2/A \rangle=5.5$, donde $Z$ y $A$ son el número atómico y el número másico del elemento constituyente, respectivamente \cite{groom2001muon}.
+En este trabajo estudiaremos la interacción de las partículas de las EAS con la materia de la corteza terrestre, la cual modelaremos como la denominada \textit{roca estándar}. Esta es una representación genérica del suelo bastante usada en la física de partículas y rayos cósmicos, y el estudio de escaneo de terrenos mediante muones, en la que se define que la roca está constituida por un material de densidad 2,65 g cm$^{-3}$ aproximadamente, y que cumple las relaciones $\langle Z/A \rangle=0.5$ y $\langle Z^2/A \rangle=5.5$, donde $Z$ y $A$ son el número atómico y el número másico del elemento constituyente respectivamente \cite{groom2001muon}.
 
-En particular, estamos interesados en el fenómeno de \textit{forward scattering} de muones que produce ruido en los detectores. Los muones que son dispersados por \textit{forward scattering} y llegan al detector entorpecen el proceso de escaneo de estructuras geológicas ya que generan señales falsas que no provienen de muones que atravesaron la estructura, como se muestra en la figura \ref{fig:scatteredNoise}. En general, este ruido es significante para energías por debajo de los 5 GeV, y en simulaciones realizadas por (H Gómez y col. 2018) \cite{gomez2017forward}, observando su efecto de dispersión en una \textit{superficie horizontal}, se vio que aquellos muones con direcciones incidentes cercanas a la tangente del suelo son principalmente los que crean una señal de ruido importante en el detector. Es entonces importante caracterizar este ruido con el fin de reducir su efecto sobre las imágenes de densidades que se deseen tomar de estructuras geológicas. En específico, es necesario analizar el espectro energético y el flujo de los muones que crean este ruido sobre el detector. Para esto, se hará uso de múltiples herramientas computacionales para simular y observar estos efectos. Las herramientas que se utilizarán en el proyecto para las simulaciones son CORSIKA, MAGNETOCOSMICS y Geant4.
+En particular, estamos interesados en el fenómeno de \textit{forward scattering} de muones que puede alterar la señal en los detectores. Los muones que son dispersados por \textit{forward scattering} y llegan al detector entorpecen el proceso de escaneo de estructuras geológicas ya que generan señales falsas que no provienen del fondo de muones, como se muestra en la figura \ref{fig:scatteredNoise}. En general, este ruido es significante para energías por debajo de los 5 GeV, y en simulaciones realizadas por (H Gómez y col. 2018) \cite{gomez2017forward}, observando su efecto de dispersión en una \textit{superficie horizontal}, se vio que aquellos muones con direcciones incidentes cercanas a la tangente del suelo son principalmente los que crean una señal de ruido importante en el detector. Es entonces importante caracterizar este ruido con el fin de reducir su efecto sobre las imágenes de densidades que se deseen tomar de estructuras geológicas. En específico, es necesario analizar el espectro energético y el flujo de los muones que crean este ruido sobre el detector. Para esto, se hará uso de múltiples herramientas computacionales para simular y observar estos efectos. Las herramientas que se utilizarán en el proyecto para las simulaciones son CORSIKA, MAGNETOCOSMICS y Geant4.
 
 
 %---------------------------------------
@@ -230,9 +231,9 @@ En este trabajo balancearemos el uso de todas estas herramientas computacionales
 \begin{enumerate}
     \item Se leerá y aprenderá sobre la teoría física pertinente para el desarrollo del proyecto; principalmente la teoría concerniente a rayos cósmicos, cascadas atmosféricas extensas, \textit{forward scattering} de muones, detección de rayos cósmicos y el modelo de \textit{roca estándar} a utilizar.
     \item Se entenderá y analizará el funcionamiento de los \textit{softwares} necesarios, con el fin de tener un buen manejo de estos para llevar a cabo el proyecto. Los programas en cuestión son CORSIKA y MAGNETOCOSMICS para la simulación de EAS, Geant4 para la simulación de interacciones de partículas de las EAS con la materia del suelo, y los códigos desarrollados por la colaboración MuTe para modelar el respectivo detector.
-    \item Se estimará el flujo de fondo de partículas secundarias a nivel del suelo en el Cerro Machín teniendo en cuenta el efecto del campo geomagnético. Para ello, se desarrollará un algoritmo computacional que integre los softwares de CORSIKA y MAGNETOCOSMICS permitiendo automatizar y simplificar el proceso de simulación de EAS.
-    \item Se estimará la señal que el flujo de fondo de la actividad 3 produce en el detector MuTe.
-    \item Se elaborará un modelo computacional de roca estándar y se simulará la interacción de los muones de fondo estimados en la actividad 3 con con este modelo. El cálculo de la radiación producida por \textit{forward scattering} se realizará a través de las herramientas de simulación de Geant4.
+    \item Para estimar el flujo de fondo de partículas secundarias en el Cerro Machín se desarrollará un algoritmo computacional que integre los softwares de CORSIKA y MAGNETOCOSMICS permitiendo automatizar y simplificar el proceso de simulación de EAS.
+    \item La estimación de la señal que el flujo de fondo de la actividad 3 produce en MuTe se realizará mediante los códigos desarrollados por la colaboración MuTe para modelar el respectivo detector.
+    \item El cálculo de la radiación producida por \textit{forward scattering} se realizará a través de las herramientas de simulación de Geant4, para lo cual se elaborará un modelo computacional de roca estándar y se simulará la interacción entre este y los muones de fondo estimados en la actividad 3.
     \item Para determinar si la señal producida por \textit{forward scattering} de muones en el detector MuTe es significativa, se comparará con la señal de fondo estimada en la actividad 4.
     \item La divulgación de los resultados obtenidos se realizará a través del libro de tesis con la teoría, desarrollo y frutos del proyecto pertinentes.
 \end{enumerate}
