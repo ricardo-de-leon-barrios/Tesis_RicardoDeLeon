@@ -14,6 +14,7 @@
 \usepackage{braket,mleftright}
 \usepackage{svg}
 \mleftright
+\def\pcite{\textcolor{red}{XXX}}
  
 \usepackage[sorting=none]{biblatex}
  
@@ -50,11 +51,13 @@
        
        \vspace{1cm}
        Codirector\\
-       \textbf{Luis A. Núñez de Villavicencio}$^1$
+       \textbf{Luis A. Núñez de Villavicencio}$^2$
        
        \vspace{1cm}
-       $^1$\textit{Grupo de Investigación en Relatividad y Gravitación, UIS}\\
-       $^2$\textit{Grupo de Investigación Integrar, Universidad de Pamplona}
+       $^1$\textit{Grupo de Investigación Integrar,
+       Universidad de Pamplona}\\
+       $^2$\textit{Grupo de Investigación en Relatividad y Gravitación, UIS}
+
  
        \vfill
        
@@ -100,21 +103,73 @@ En este proyecto se estimará el efecto que el fenómeno de \textit{forward scat
 %-------------------------------------------
 \section*{Justificación y planteamiento del problema}
 
-La muografía de volcanes es una técnica para estimar la distribución de densidad de materia al interior de un edificio volcánico. Esto se logra a partir del análisis del registro del flujo de muones que atraviesan la estructura; en particular, determinando las diferencias de flujo en función de la dirección o posición en el volcán por la que han atravesado. En este contexto, para la correcta interpretación de los datos es fundamental determinar qué mediciones no están correlacionadas con la estructura, o no provienen de esta.
+La muografía de volcanes es una técnica para estimar la distribución de densidad de
+materia al interior de un edificio volcánico; esto se logra a partir del análisis del
+registro del flujo de muones que atraviesan la estructura, en particular, determinando
+las diferencias de flujo en función de la dirección o posición por la que
+han atravesado al volcán. En este contexto, determinar qué mediciones no están correlacionadas 
+con las estructura es fundamental para la correcta interpretación de los datos.
 
-En el escenario de la muografía, es común el uso de detectores Cherenkov y hodoscopios. Con detectores Cherenkov se puede detectar el paso de partículas energéticas, como los muones, basándose en el fenómeno de emisión de radiación Cherenkov, mientras que con hodoscopios se puede hacer una recreación de la trayectoria de las partículas incidentes. Con esto en mente, la Universidad Industrial de Santander y colaboradores han estado trabajando en el proyecto MuTe\footnote{\textit{\textbf{Mu}on \textbf{Te}lescope}}: la implementación de un detector de muones híbrido que combine los principios de funcionamiento de un hodoscopio con un detector Cherenkov de agua (WCD\footnote{\textit{Water Cherenkov Detector}}) para el escaneo de estructuras geológicas en las montañas de Colombia \cite{pena2019calibration}\cite{rodriguez2018minimute}. En representación de Colombia, la UIS realiza el estudio del clima espacial y la coordinación de proyectos de implementación de detectores como el MuTe para mediciones de radiación cósmica a nivel del suelo dentro del marco del proyecto LAGO\footnote{\textit{Latin American Giant Observatory}, \url{http://lagoproject.net/}}. Supervisado por la Colaboración LAGO, una colaboración entre más de 100 científicos en 30 instituciones de 11 países distintos (en su mayoría latinoamericanos\footnote{Los países que participan en la Colaboración LAGO son Argentina, Bolivia, Brasil, Chile, Colombia, Ecuador, Guatemala, México, Perú y Venezuela en Latinoamérica, y España en Europa.}), el proyecto LAGO pretende servir como un gran observatorio de astropartículas, haciendo investigación en temas de Universo extremo, clima espacial y radiación atmosférica a nivel del suelo. En particular, uno de los objetivos del proyecto MuTe es estudiar la estructura de los volcanes activos en Colombia. Estudiando las distribuciones de densidad en los volcanes activos del país, se espera obtener modelos de sus estructuras internas que, potencialmente, permitan evaluar los riesgos futuros que estos puedan representar. Para esto, se busca que las imágenes obtenidas de los volcanes por tomografía de muones sean lo más detalladas posibles, siendo entonces importante reducir tanto como sea posible los efectos del ruido en los detectores. Hasta la fecha, se ha considerado al Cerro Machín, un pico volcánico ubicado en Tolima, como el único apto para la muografía volcánica en Colombia \cite{vesga2018inversion}\cite{balaguera2017astroparticle}.
+En la actualidad, diferentes proyectos han sido desarrollados para aplicar la 
+muografía \cite{kaiser2019muography,saracino2019applications}. Independientemente de la tecnología empleada, todos estos proyectos 
+tienen como elemento común en su diseño un hodoscopio, el cual permite determinar la
+dirección en que una partícula ha atravesado el instrumento a partir de la señal
+depositada en el mismo. De esta manera, es posible conocer cuáles de estas partículas tienen una dirección correlacionada con el edificio volcánico; información que permite estimar la distribución de densidad de materia al interior del mismo.
 
-Como se muestra en la figura \ref{fig:scatteredNoise}, cuando se hace muografía de estructuras geológicas existen varias fuentes de señal que pueden afectar la imagen por \textit{forward scattering}: hadrones cargados y electrones y positrones, conocidos como \textit{muones falsos} (\textit{fake muons}), y los llamados \textit{muones suaves} (\textit{soft muons}) que son muones reales con bajas energías. También pueden llegar muones por detrás del detector (\textit{backward muons}), quienes igualmente podrían sumar al ruido de fondo \cite{bonechi2020atmospheric}. El MuTe puede discrimar electrones/positrones de muones mediante técnicas de identificación de partículas. Por ejemplo, como se ve en simulaciones hechas en (A Vesga Ramírez y col. 2017) \cite{asorey2017muon}, la gran mayoría de positrones y electrones se encuentran en un rango energético inferior a los muones. Aplicando un umbral a la energía de las partículas recolectadas por el detector se puede reducir en gran medida el efecto de los electrones y positrones en la imagen. Sin embargo, la abundancia y el espectro de estas partículas cargadas se ven afectados por los mismos factores que afectan el flujo de muones reales, los cuales dependen de la localización. Debido a esto, la estimación de este ruido se suele hacer \textit{in situ}. Por su parte, el ruido generado por los muones suaves es también un problema complejo. En general, el efecto de los muones suaves es insignificante a altas energías pero cobra importancia a bajas energías. Estos muones de bajas energías son dispersados con mayor probabilidad en ángulos grandes lo que representa un problema cuando los objetivos son de gran tamaño, como los volcanes: los detectores se ubican distantes del objetivo y de forma casi horizontal, facilitando la recepción de muones suaves \cite{bonechi2020atmospheric}. La señal total producida por \textit{forward scattering} de partículas cargadas y muones suaves afecta la imagen registrada en el detector representando potencialmente un ruido irreducible \cite{gomez2017forward}. Para obtener imágenes limpias de los objetivos, es imprescindible caracterizar el espectro y flujo de las partículas que generan este ruido.
+Cómo distinguir qué señales corresponden realmente a una partícula física, de entre todas
+las señales registradas por el instrumento, en general hace parte de la calibración del
+detector. Sin embargo, existen algunas señales que a pesar de ser interpretadas como
+partículas y tener una dirección de arribo correlacionada con el volcán, realmente
+no provienen de este último sino del suelo, tal y como se ilustra en la 
+figura\,\ref{fig:scatteredNoise}. A este tipo de señales se les denomina ruido
+-asumiendo en este punto que el ruido electrónico ya ha sido descartado-, y son
+generadas por el fenómeno conocido como {\it Muon Forward Scattering} (MFS) \cite{gomez2017forward}. 
+La presencia de este ruido en la interpretación y cálculo de cómo se distribuye la 
+materia al interior del edificio volcánico, conlleva a sobre estimaciones y 
+conclusiones erróneas, tal y como lo muestran algunos estudios \cite{gomez2017forward,bonechi2020atmospheric,asorey2017muon}.
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includesvg[width=4in]{images/forwardscatter.svg}
-    \caption{Partícula dispersada por la superficie de un volcán genera ruido en el WCD.}
+    \caption{Una partícula es dispersada al interactuar con la superficie de un volcán y es registrada en un WCD, donde afecta a la imagen del objetivo.}
     \label{fig:scatteredNoise}
 \end{figure}
 
+Este trabajo se centra en estimar el ruido producido por MFS en las señales registradas 
+por el detector MuTe\footnote{\textit{\textbf{Mu}on \textbf{Te}lescope}}, instrumento diseñado y construido en la UIS \cite{pena2019calibration,rodriguez2018minimute,sanabria2018mute}, y que será
+instalado en el volcán Cerro Machín \cite{vesga2018inversion,balaguera2017astroparticle}. Para esto se realizará un modelado
+computacional que permita, primero, calcular la señal base de MuTe; es decir, lo que
+registraría el instrumento como consecuencia de la radiación de fondo (EAS) y sin
+incluir el fenómeno de {\it Muon Forward Scattering}. Segundo, a partir de la 
+radiación de fondo, determinar el espectro de partículas producidas por MFS y la señal
+que estas producen en el detector. De esta forma, apuntamos a cuantificar cuánto de ruido 
+por MFS habría en la señal de MuTe.
 
-En este trabajo abordaremos el problema suponiendo que el detector MuTe registra dos señales principales: una señal de fondo producida por las partícuas secundarias de rayos cósmicos y una señal producida por el \textit{forward scattering} de muones (falsos y suaves). En el proyecto, apuntaremos a estimar qué tan significativa es la contribución de esta última a la señal de fondo registrada por el MuTe, específicamente aplicado para la muografía volcánica. En \cite{gomez2017forward} se discuten algunos efectos del \textit{forward scattering} de muones sobre un detector Cherenkov, donde este fenómeno fue simulado mediante Geant4; sin embargo, el flujo incidente de muones fue generado artificialmente teniendo control total sobre sus valores iniciales de energía y ángulo de incidencia. En cambio, en este proyecto caracterizaremos los efectos del \textit{forward scattering} para muones producidos por rayos cósmicos en la atmósfera, para lo cual será necesaria la implementación de otras herramientas computacionales como CORSIKA y MAGNETOCOSMICS para simular los eventos de cascadas atmosféricas extensas. Con esto, se busca ayudar a que los mapas de densidad de estructuras volcánicas registrados por el MuTe sean lo más prolijos posible, facilitando su estudio y permitiendo, potencialmente, una valoración detallada de los posibles riesgos que estos puedan suponer para la población.
+En cuanto al modelado computacional, se 
+partirá de los códigos y modelos desarrollados por la colaboración MuTe \cite{msd_phd2019,vasquez2019simulated}. 
+Estos códigos están basados en: MAGNETOCOSMICS \cite{magnetocosmics,desorgher2003geant4} y CORSIKA \cite{heck1998corsika} para estimar
+el fondo de radiación producido en el suelo, incluyendo correcciones por campo 
+geomagnético; y Geant4 \cite{agostinelli2003geant4,calderon2015geant4} para modelar la interacción de la radiación 
+con el detector.
+
+%En el escenario de la muografía, es común el uso de distintos tipos de detectores. 
+%Específicamente, con detectores Cherenkov se puede registrar el paso de partículas 
+%energéticas, como los muones, basándose en el fenómeno de emisión de radiación 
+%Cherenkov, mientras que con hodoscopios se puede hacer una recreación de la 
+%trayectoria de las partículas incidentes.
+
+%Con esto en mente, la Universidad Industrial de Santander y colaboradores han estado trabajando en el proyecto MuTe\footnote{\textit{\textbf{Mu}on \textbf{Te}lescope}}: la implementación de un detector de muones híbrido que combine los principios de funcionamiento de un hodoscopio con un detector Cherenkov de agua (WCD\footnote{\textit{Water Cherenkov Detector}}) para el escaneo de estructuras geológicas en las montañas de Colombia \cite{pena2019calibration}\cite{rodriguez2018minimute}. 
+
+%En particular, uno de los objetivos del proyecto MuTe es estudiar la estructura de los volcanes activos en Colombia. Estudiando las distribuciones de densidad en los volcanes activos del país, se espera obtener modelos de sus estructuras internas que, potencialmente, permitan evaluar los riesgos futuros que estos puedan representar. Para esto, se busca que las imágenes obtenidas de los volcanes por tomografía de muones sean lo más detalladas posibles, siendo entonces importante reducir tanto como sea posible los efectos del ruido en los detectores. Hasta la fecha, se ha considerado al Cerro Machín, un pico volcánico ubicado en Tolima, como el único apto para la muografía volcánica en Colombia \cite{vesga2018inversion}\cite{balaguera2017astroparticle}.
+
+%Como se muestra en la figura \ref{fig:scatteredNoise}, cuando se hace muografía de estructuras geológicas existen varias fuentes de señal que pueden afectar la imagen por \textit{forward scattering}: hadrones cargados y electrones y positrones, conocidos como \textit{muones falsos} (\textit{fake muons}), y los llamados \textit{muones suaves} (\textit{soft muons}) que son muones reales con bajas energías. También pueden llegar muones por detrás del detector (\textit{backward muons}), quienes igualmente podrían sumar al ruido de fondo \cite{bonechi2020atmospheric}.
+
+%El MuTe puede discrimar electrones/positrones de muones mediante técnicas de identificación de partículas. Por ejemplo, como se ve en simulaciones hechas en (A Vesga Ramírez y col. 2017) \cite{asorey2017muon}, la gran mayoría de positrones y electrones se encuentran en un rango energético inferior a los muones. Aplicando un umbral a la energía de las partículas recolectadas por el detector se puede reducir en gran medida el efecto de los electrones y positrones en la imagen. Sin embargo, la abundancia y el espectro de estas partículas cargadas se ven afectados por los mismos factores que afectan el flujo de muones reales, los cuales dependen de la localización. Debido a esto, la estimación de este ruido se suele hacer \textit{in situ}. Por su parte, el ruido generado por los muones suaves es también un problema complejo. En general, el efecto de los muones suaves es insignificante a altas energías pero cobra importancia a bajas energías. Estos muones de bajas energías son dispersados con mayor probabilidad en ángulos grandes lo que representa un problema cuando los objetivos son de gran tamaño, como los volcanes: los detectores se ubican distantes del objetivo y de forma casi horizontal, facilitando la recepción de muones suaves \cite{bonechi2020atmospheric}. La señal total producida por \textit{forward scattering} de partículas cargadas y muones suaves afecta la imagen registrada en el detector representando potencialmente un ruido irreducible \cite{gomez2017forward}. Para obtener imágenes limpias de los objetivos, es imprescindible caracterizar el espectro y flujo de las partículas que generan este ruido.
+
+
+
+
+%En este trabajo abordaremos el problema suponiendo que el detector MuTe registra dos señales principales: una señal de fondo producida por las partícuas secundarias de rayos cósmicos y una señal producida por el \textit{forward scattering} de muones (falsos y suaves). En el proyecto, apuntaremos a estimar qué tan significativa es la contribución de esta última a la señal de fondo registrada por el MuTe, específicamente aplicado para la muografía volcánica. En \cite{gomez2017forward} se discuten algunos efectos del \textit{forward scattering} de muones sobre un detector Cherenkov, donde este fenómeno fue simulado mediante Geant4; sin embargo, el flujo incidente de muones fue generado artificialmente teniendo control total sobre sus valores iniciales de energía y ángulo de incidencia. En cambio, en este proyecto caracterizaremos los efectos del \textit{forward scattering} para muones producidos por rayos cósmicos en la atmósfera, para lo cual será necesaria la implementación de otras herramientas computacionales como CORSIKA y MAGNETOCOSMICS para simular los eventos de cascadas atmosféricas extensas. Con esto, se busca ayudar a que los mapas de densidad de estructuras volcánicas registrados por el MuTe sean lo más prolijos posible, facilitando su estudio y permitiendo, potencialmente, una valoración detallada de los posibles riesgos que estos puedan suponer para la población.
 
 
 
@@ -148,18 +203,40 @@ La muografía (lit. `escribir con muones') es el uso de muones cósmicos de alta
 
 El principio en el que se basa la muografía es similar al uso de rayos X en la medicina como indicador de la densidad de las estrucutras óseas del cuerpo. En el caso de la muografía, se usan muones provenientes de rayos cósmicos como indicadores de la densidad de estructuras, generalmente de gran tamaño. Debido a esto, es muy frecuente el uso del término \textit{radiografía de muones}, especialmente para referirse al escaneo en dos dimensiones; por otro lado, para la creación de imágenes tridimensionales se prefiere el término \textit{tomografía de muones} \cite{kaiser2019muography}.
 
-La forma en la que se crean mapas de estructuras por medio de muografía es estudiando la atenuación del flujo de muones que pasan a través de ellas. El objeto que se desee estudiar presentará una opacidad ante el paso de muones, que depende de su densidad. Esta opacidad se puede deducir a partir de la atenuación, la cual se halla comparando el flujo de muones a través de la estructura con el flujo de muones en condiciones de cielo abierto. Los muones pierden energía por interacciones débiles con la materia a través de la cual pasan, principalmente por medio de ionización. Esta pérdida de energía para un cierto material está relacionada con la energía mínima que deben tener los muones para cruzar la estructura, y esta a su vez está relacionada con el flujo integrado de muones. A lo largo de su recorrido a través de la materia, la forma en la que los muones se ven dispersados se describe por medio de la dispersión de Coulomb \cite{lesparre2010geophysical}.
+La forma en la que se crean mapas de estructuras por medio de muografía es estudiando la atenuación del flujo de muones que pasan a través de ellas. El objeto que se desee estudiar presentará una opacidad ante el paso de muones, que depende de su densidad:
+
+
+\begin{equation}\varrho(L) \equiv \int_{L} \rho(\xi) \mathrm{d} \xi\end{equation}
+
+Donde $\rho(L)$ es la densidad del objeto y $\xi$ es la coordenada a lo largo de la trayectoria $L$ del muon atravesando la roca. Esta opacidad se puede deducir a partir de la atenuación, la cual se halla comparando el flujo de muones a través de la estructura, $\Phi$, con el flujo de muones en condiciones de cielo abierto $\Phi_0$. Los muones pierden energía por interacciones débiles con la materia a través de la cual pasan, principalmente por medio de ionización. Esta pérdida de energía está descrita por:
+
+\begin{equation}
+    -\frac{\mathrm{d} E}{\mathrm{d} \varrho}=a(E)+b(E) E
+    \label{eq:energyloss}
+\end{equation}
+
+Donde $a(E)$ representa la pérdida de energía por ionización y $b(E)$ por Brem\ss trahlung, interacciones nucleares y creación de parejas electrón-positrón. Los valores numéricos de esas funciones dependen del material que las partículas atraviesen. Integrando la expresión, se puede hallar la energía mínima para que los muones atraviesen la roca:
+
+\begin{equation}E_{\min }-\int_{0}^{\varrho} \frac{\mathrm{d} E}{\mathrm{d} \varrho} \mathrm{d} \varrho=E_{\mu}\end{equation}
+
+Con $E_{\mu}$ siendo la energía de reposo de la partícula. Finalmente, la energía mínima está relacionada con el flujo integrado de muones a través de la estructura:
+
+\begin{equation}I[\varrho, \theta]=\int_{E_{\min }(\varrho)}^{\infty} \Phi\left(E_{0}, \theta\right) \mathrm{d} E_{0}
+\end{equation}
+
+$I[\varrho,\theta]$ es entonces el flujo de muones que emergen de la roca en función de su opacidad por un cierto tiempo, para un cierto ángulo cenital. A lo largo de su recorrido a través de la materia, la forma en la que los muones se ven dispersados se describe por medio de la dispersión de Coulomb \cite{lesparre2010geophysical}.
+
 
 La muografía representa entonces una herramienta útil para realizar mapas de densidad de estructuras que se deseen estudiar. Sus aplicaciones se encuentran generalmente en la geociencia, seguridad nuclear, ingeniería civil y arqueología. La figura \ref{fig:applications} muestra una infografía esquemática con distintas aplicaciones de la muografía. En la geociencia en particular, una de sus más importantes aplicaciones es en el escaneo de volcanes para comprender mejor sus estructuras y evaluar sus posibles riesgos.
 
-Los volcanes son puntos en la superficie de la Tierra por donde se puede presentar la salida de material magmático proveniente del interior de esta. La formación y erupción de un volcán responde a un largo proceso geológico de miles a millones de años \cite{vesga2018inversion}. En los últimos años, la muografía ha surgido como una herramienta de estudio de estas estructuras; de su génesis, su funcionamiento y su evolución.
-
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{images/applications.png}
-    \caption{Aplicaciones de la muografía. Algunas de las más relevantes son el escaneo de volcanes y estructuras subterráneas para geociencia, el monitoreo de materiales y desechos radiactivos para seguridad nuclear, y el monitoreo de altos hornos y grandes construcciones para la ingeniería civil. Imagen tomada de (R Kaiser, 2019) \cite{kaiser2019muography}.}
+    \caption{Aplicaciones de la muografía. Algunas de las más relevantes son el escaneo de volcanes y estructuras subterráneas para geociencia, el monitoreo de materiales y desechos radiactivos para seguridad nuclear, y el monitoreo de altos hornos y grandes construcciones para la ingeniería civil. Imagen tomada de \cite{kaiser2019muography}.}
     \label{fig:applications}
 \end{figure}
+
+Los volcanes son puntos en la superficie de la Tierra por donde se puede presentar la salida de material magmático proveniente del interior de esta. La formación y erupción de un volcán responde a un largo proceso geológico de miles a millones de años \cite{vesga2018inversion}. En los últimos años, la muografía ha surgido como una herramienta de estudio de estas estructuras; de su génesis, su funcionamiento y su evolución.
 
 Como parte de este trabajo, estudiaremos la interacción de las partículas de las EAS con la materia de la corteza terrestre, la cual modelaremos como la denominada \textit{roca estándar}. Esta es una representación genérica del suelo bastante usada en la física de partículas y rayos cósmicos, y el estudio de escaneo de terrenos mediante muones. Se define que la roca estándar está constituida por un material de densidad 2,65 g cm$^{-3}$ aproximadamente, y que cumple las relaciones $\langle Z/A \rangle=0.5$ y $\langle Z^2/A \rangle=5.5$, donde $Z$ y $A$ son el número atómico y el número másico del elemento constituyente respectivamente \cite{groom2001muon}.
 
@@ -229,7 +306,10 @@ A continuación se presentan las actividades que se proponen para lograr los obj
 \begin{enumerate}
     \item Para estimar el flujo de fondo de partículas secundarias en el Cerro Machín se desarrollará un código computacional que integre los softwares de CORSIKA y MAGNETOCOSMICS permitiendo automatizar y simplificar el proceso de simulación de EAS.
     \item La estimación de la señal producida por las EAS en el detector se realizará mediante el código desarrollado por la colaboración MuTe en conjunto con la herramienta creada en la actividad 1.
-    \item El cálculo de la radiación producida por \textit{forward scattering} se realizará a través de las herramientas de simulación de Geant4, para lo cual se elaborará un modelo computacional de roca estándar y se simulará la interacción entre este y los muones de fondo estimados en la actividad 1. Se observará el efecto que los muones falsos y suaves dispersados tienen sobre el detector MuTe.
+    
+    \item El cálculo de la radiación producida por \textit{forward scattering} se realizará a través de
+    un código computacional, basado en Geant4, que permita modelar la interacción entre los muones de fondo (estimados en la actividad 1.) y un volumen de materia tipo roca estándar.
+    
     \item Para determinar si la señal producida por \textit{forward scattering} de muones en el detector MuTe es significativa, se comparará con la señal de fondo estimada en la actividad 2.
     \item La divulgación de los resultados obtenidos se realizará a través del libro de tesis con la teoría, desarrollo y frutos del proyecto pertinentes.
 \end{enumerate}
@@ -243,7 +323,7 @@ A continuación se presentan las actividades que se proponen para lograr los obj
 \subsection*{Presupuesto}
 
 \begin{center}
-    \includegraphics[width=\textwidth]{images/presupuesto.png}
+    \includegraphics[width=0.95\textwidth]{images/presupuesto.png}
 \end{center}
 
 
