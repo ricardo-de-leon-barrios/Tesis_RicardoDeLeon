@@ -1,0 +1,650 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ABWFF	water2.cc	/^  G4double ABWFF = 0.3;$/;"	l
+ActionInitialization	ActionInitialization.cc	/^ActionInitialization::ActionInitialization()$/;"	f	class:ActionInitialization	signature:()
+ActionInitialization::ActionInitialization	ActionInitialization.cc	/^ActionInitialization::ActionInitialization()$/;"	f	class:ActionInitialization	signature:()
+ActionInitialization::Build	ActionInitialization.cc	/^void ActionInitialization::Build() const$/;"	f	class:ActionInitialization	signature:() const
+ActionInitialization::BuildForMaster	ActionInitialization.cc	/^void ActionInitialization::BuildForMaster() const$/;"	f	class:ActionInitialization	signature:() const
+ActionInitialization::InitializeSteppingVerbose	ActionInitialization.cc	/^G4VSteppingVerbose* ActionInitialization::InitializeSteppingVerbose() const$/;"	f	class:ActionInitialization	signature:() const
+ActionInitialization::~ActionInitialization	ActionInitialization.cc	/^ActionInitialization::~ActionInitialization()$/;"	f	class:ActionInitialization	signature:()
+AddDiscreteProcess	ExtraPhysics.cc	/^           pmanager->AddDiscreteProcess(new G4StepLimiter());$/;"	p	file:	signature:(new G4StepLimiter())
+AddDiscreteProcess	ExtraPhysics.cc	/^           pmanager->AddDiscreteProcess(new G4UserSpecialCuts());$/;"	p	file:	signature:(new G4UserSpecialCuts())
+AddDiscreteProcess	ExtraPhysics.cc	/^          pmanager->AddDiscreteProcess(new G4UserSpecialCuts());$/;"	p	file:	signature:(new G4UserSpecialCuts())
+AddDiscreteProcess	OpticalPhysics.cc	/^  if (fAbsorptionOn) pManager->AddDiscreteProcess(fAbsorptionProcess);$/;"	p	file:	signature:(fAbsorptionProcess)
+AddDiscreteProcess	OpticalPhysics.cc	/^  pManager->AddDiscreteProcess(fBoundaryProcess);$/;"	p	file:	signature:(fBoundaryProcess)
+AddDiscreteProcess	OpticalPhysics.cc	/^  pManager->AddDiscreteProcess(fProcess);$/;"	p	file:	signature:(fProcess)
+AddDiscreteProcess	PhysicsList.cc	/^         if (pmanager) pmanager ->AddDiscreteProcess(fStepMaxProcess);$/;"	p	file:	signature:(fStepMaxProcess)
+AddElement	grdFloor.cc	/^	grdFloor_mat->AddElement(elO,  natoms=2);$/;"	p	file:	signature:(elO, natoms=2)
+AddElement	grdFloor.cc	/^	grdFloor_mat->AddElement(elSi, natoms=1);$/;"	p	file:	signature:(elSi, natoms=1)
+AddElement	water.cc	/^  thewater->AddElement(H, 2);$/;"	p	file:	signature:(H, 2)
+AddElement	water.cc	/^  thewater->AddElement(O, 1);$/;"	p	file:	signature:(O, 1)
+AddElement	water2.cc	/^  thewater->AddElement(H, 2);$/;"	p	file:	signature:(H, 2)
+AddElement	water2.cc	/^  thewater->AddElement(O, 1);$/;"	p	file:	signature:(O, 1)
+AddProcess	OpticalPhysics.cc	/^      pManager->AddProcess(fCerenkovProcess);$/;"	p	file:	signature:(fCerenkovProcess)
+AddProcess	OpticalPhysics.cc	/^      pManager->AddProcess(fScintProcess);$/;"	p	file:	signature:(fScintProcess)
+AddProcess	PhysicsList.cc	/^      pManager->AddProcess(decayWithSpin);$/;"	p	file:	signature:(decayWithSpin)
+AddProcess	PhysicsList.cc	/^      pManager->AddProcess(poldecay);$/;"	p	file:	signature:(poldecay)
+AddSaturation	OpticalPhysics.cc	/^  fScintProcess->AddSaturation(emSaturation);$/;"	p	file:	signature:(emSaturation)
+AddStepMax	PhysicsList.cc	/^void PhysicsList::AddStepMax()$/;"	f	class:PhysicsList	signature:()
+AvailableForStates	PhysicsListMessenger.cc	/^    fAllCutCMD->AvailableForStates(G4State_PreInit,G4State_Idle);$/;"	p	file:	signature:(G4State_PreInit,G4State_Idle)
+AvailableForStates	PhysicsListMessenger.cc	/^    fCerenkovCmd->AvailableForStates(G4State_Idle);$/;"	p	file:	signature:(G4State_Idle)
+AvailableForStates	PhysicsListMessenger.cc	/^    fClearPhysicsCMD->AvailableForStates(G4State_PreInit,G4State_Idle);$/;"	p	file:	signature:(G4State_PreInit,G4State_Idle)
+AvailableForStates	PhysicsListMessenger.cc	/^    fElectCutCMD->AvailableForStates(G4State_PreInit,G4State_Idle);$/;"	p	file:	signature:(G4State_PreInit,G4State_Idle)
+AvailableForStates	PhysicsListMessenger.cc	/^    fGammaCutCMD->AvailableForStates(G4State_PreInit,G4State_Idle);$/;"	p	file:	signature:(G4State_PreInit,G4State_Idle)
+AvailableForStates	PhysicsListMessenger.cc	/^    fListCMD->AvailableForStates(G4State_Idle);$/;"	p	file:	signature:(G4State_Idle)
+AvailableForStates	PhysicsListMessenger.cc	/^    fPosCutCMD->AvailableForStates(G4State_PreInit,G4State_Idle);$/;"	p	file:	signature:(G4State_PreInit,G4State_Idle)
+AvailableForStates	PhysicsListMessenger.cc	/^    fRemovePhysicsCMD->AvailableForStates(G4State_PreInit,G4State_Idle);$/;"	p	file:	signature:(G4State_PreInit,G4State_Idle)
+AvailableForStates	PhysicsListMessenger.cc	/^    fSetAbsorptionCMD->AvailableForStates(G4State_Idle);$/;"	p	file:	signature:(G4State_Idle)
+AvailableForStates	PhysicsListMessenger.cc	/^    fStepMaxCMD->AvailableForStates(G4State_PreInit,G4State_Idle);$/;"	p	file:	signature:(G4State_PreInit,G4State_Idle)
+AvailableForStates	PhysicsListMessenger.cc	/^    fVerboseCmd->AvailableForStates(G4State_Idle);$/;"	p	file:	signature:(G4State_Idle)
+AvailableForStates	PrimaryGeneratorMessenger.cc	/^  fPolarCmd->AvailableForStates(G4State_Idle);$/;"	p	file:	signature:(G4State_Idle)
+BeginOfEventAction	EventAction.cc	/^void EventAction::BeginOfEventAction(const G4Event* event)$/;"	f	class:EventAction	signature:(const G4Event* event)
+BeginOfRunAction	RunAction.cc	/^void RunAction::BeginOfRunAction(const G4Run* aRun)$/;"	f	class:RunAction	signature:(const G4Run* aRun)
+Build	ActionInitialization.cc	/^void ActionInitialization::Build() const$/;"	f	class:ActionInitialization	signature:() const
+BuildForMaster	ActionInitialization.cc	/^void ActionInitialization::BuildForMaster() const$/;"	f	class:ActionInitialization	signature:() const
+CerPhoPerCm	CerenkovValidation.cc	/^void CerenkovValidation::CerPhoPerCm(G4double dist)$/;"	f	class:CerenkovValidation	signature:(G4double dist)
+CerPhoPerCm	CerenkovValidation.cc	/^void CerenkovValidation::CerPhoPerCm(const G4Track* track)$/;"	f	class:CerenkovValidation	signature:(const G4Track* track)
+CerValHistograms	CerValHistograms.cc	/^CerValHistograms::CerValHistograms()$/;"	f	class:CerValHistograms	signature:()
+CerValHistograms::CerValHistograms	CerValHistograms.cc	/^CerValHistograms::CerValHistograms()$/;"	f	class:CerValHistograms	signature:()
+CerValHistograms::creatHistStopPow	CerValHistograms.cc	/^void CerValHistograms::creatHistStopPow(G4int runId)$/;"	f	class:CerValHistograms	signature:(G4int runId)
+CerValHistograms::creatingHist	CerValHistograms.cc	/^void CerValHistograms::creatingHist(G4int runId)$/;"	f	class:CerValHistograms	signature:(G4int runId)
+CerValHistograms::doHistCerPhoCm	CerValHistograms.cc	/^void CerValHistograms::doHistCerPhoCm(G4double nphoVcm)$/;"	f	class:CerValHistograms	signature:(G4double nphoVcm)
+CerValHistograms::~CerValHistograms	CerValHistograms.cc	/^CerValHistograms::~CerValHistograms()$/;"	f	class:CerValHistograms	signature:()
+CerenkovValidation	CerenkovValidation.cc	/^CerenkovValidation::CerenkovValidation()$/;"	f	class:CerenkovValidation	signature:()
+CerenkovValidation::CerPhoPerCm	CerenkovValidation.cc	/^void CerenkovValidation::CerPhoPerCm(G4double dist)$/;"	f	class:CerenkovValidation	signature:(G4double dist)
+CerenkovValidation::CerPhoPerCm	CerenkovValidation.cc	/^void CerenkovValidation::CerPhoPerCm(const G4Track* track)$/;"	f	class:CerenkovValidation	signature:(const G4Track* track)
+CerenkovValidation::CerenkovValidation	CerenkovValidation.cc	/^CerenkovValidation::CerenkovValidation()$/;"	f	class:CerenkovValidation	signature:()
+CerenkovValidation::GetWavelength	CerenkovValidation.cc	/^void CerenkovValidation::GetWavelength(G4double phoEner)$/;"	f	class:CerenkovValidation	signature:(G4double phoEner)
+CerenkovValidation::StopPowDeepWater	CerenkovValidation.cc	/^void CerenkovValidation::StopPowDeepWater(const G4Step* step)$/;"	f	class:CerenkovValidation	signature:(const G4Step* step)
+CerenkovValidation::countingPho	CerenkovValidation.cc	/^void CerenkovValidation::countingPho(int opt)$/;"	f	class:CerenkovValidation	signature:(int opt)
+CerenkovValidation::printtingCerPhoCounting	CerenkovValidation.cc	/^void CerenkovValidation::printtingCerPhoCounting(int opt)$/;"	f	class:CerenkovValidation	signature:(int opt)
+CerenkovValidation::resetting	CerenkovValidation.cc	/^void CerenkovValidation::resetting()$/;"	f	class:CerenkovValidation	signature:()
+CerenkovValidation::~CerenkovValidation	CerenkovValidation.cc	/^CerenkovValidation::~CerenkovValidation()$/;"	f	class:CerenkovValidation	signature:()
+CleanSurfaceTable	DetectorConstruction.cc	/^  G4LogicalBorderSurface::CleanSurfaceTable();$/;"	p	class:G4LogicalBorderSurface	file:	signature:()
+CleanSurfaceTable	DetectorConstruction.cc	/^  G4LogicalSkinSurface::CleanSurfaceTable();$/;"	p	class:G4LogicalSkinSurface	file:	signature:()
+ClearPhysics	PhysicsList.cc	/^void PhysicsList::ClearPhysics()$/;"	f	class:PhysicsList	signature:()
+ClearPhysics	PhysicsListMessenger.cc	/^        fPhysicsList->ClearPhysics();$/;"	p	file:	signature:()
+Close	CerValHistograms.cc	/^  rfCerValHist->Close();$/;"	p	file:	signature:()
+Close	histosRun.cc	/^  histosOutput->Close();$/;"	p	file:	signature:()
+CloseFile	RunAction.cc	/^  analysisManager->CloseFile();$/;"	p	file:	signature:()
+Construct	DetectorConstruction.cc	/^G4VPhysicalVolume* DetectorConstruction::Construct()$/;"	f	class:DetectorConstruction	signature:()
+ConstructDetector	DetectorConstruction.cc	/^G4VPhysicalVolume* DetectorConstruction::ConstructDetector()$/;"	f	class:DetectorConstruction	signature:()
+ConstructParticle	ExtraPhysics.cc	/^void ExtraPhysics::ConstructParticle() { }$/;"	f	class:ExtraPhysics	signature:()
+ConstructParticle	OpticalPhysics.cc	/^void OpticalPhysics::ConstructParticle()$/;"	f	class:OpticalPhysics	signature:()
+ConstructParticle	PhysicsList.cc	/^    G4VModularPhysicsList::ConstructParticle();$/;"	p	class:G4VModularPhysicsList	file:	signature:()
+ConstructParticle	PhysicsList.cc	/^void PhysicsList::ConstructParticle()$/;"	f	class:PhysicsList	signature:()
+ConstructProcess	ExtraPhysics.cc	/^void ExtraPhysics::ConstructProcess()$/;"	f	class:ExtraPhysics	signature:()
+ConstructProcess	OpticalPhysics.cc	/^void OpticalPhysics::ConstructProcess()$/;"	f	class:OpticalPhysics	signature:()
+ConstructProcess	PhysicsList.cc	/^       fOpticalPhysics->ConstructProcess();$/;"	p	file:	signature:()
+ConstructProcess	PhysicsList.cc	/^    G4VModularPhysicsList::ConstructProcess();$/;"	p	class:G4VModularPhysicsList	file:	signature:()
+ConstructProcess	PhysicsList.cc	/^void PhysicsList::ConstructProcess()$/;"	f	class:PhysicsList	signature:()
+DefineMaterials	DetectorConstruction.cc	/^  expHall->DefineMaterials();$/;"	p	file:	signature:()
+DefineMaterials	DetectorConstruction.cc	/^  grd->DefineMaterials();$/;"	p	file:	signature:()
+DefineMaterials	DetectorConstruction.cc	/^  groundBase->DefineMaterials();$/;"	p	file:	signature:()
+DefineMaterials	grdFloor.cc	/^void grdFloor::DefineMaterials()$/;"	f	class:grdFloor	signature:()
+DefineMaterials	wcdLagoCalo.cc	/^void wcdLagoCalo::DefineMaterials()$/;"	f	class:wcdLagoCalo	signature:()
+DefineMaterials	wcdLagoCont.cc	/^void wcdLagoCont::DefineMaterials()$/;"	f	class:wcdLagoCont	signature:()
+DefineMaterials	wcdpmt.cc	/^void wcdpmt::DefineMaterials()$/;"	f	class:wcdpmt	signature:()
+DefineMaterials	world.cc	/^void world::DefineMaterials()$/;"	f	class:world	signature:()
+DefineMaterials	worldGround.cc	/^void worldGround::DefineMaterials()$/;"	f	class:worldGround	signature:()
+DetectorConstruction	DetectorConstruction.cc	/^DetectorConstruction::DetectorConstruction()$/;"	f	class:DetectorConstruction	signature:()
+DetectorConstruction::Construct	DetectorConstruction.cc	/^G4VPhysicalVolume* DetectorConstruction::Construct()$/;"	f	class:DetectorConstruction	signature:()
+DetectorConstruction::ConstructDetector	DetectorConstruction.cc	/^G4VPhysicalVolume* DetectorConstruction::ConstructDetector()$/;"	f	class:DetectorConstruction	signature:()
+DetectorConstruction::DetectorConstruction	DetectorConstruction.cc	/^DetectorConstruction::DetectorConstruction()$/;"	f	class:DetectorConstruction	signature:()
+DetectorConstruction::setWcdHight	DetectorConstruction.cc	/^void DetectorConstruction::setWcdHight( G4double wcdH )$/;"	f	class:DetectorConstruction	signature:( G4double wcdH )
+DetectorConstruction::setWcdRadius	DetectorConstruction.cc	/^void DetectorConstruction::setWcdRadius( G4double wcdR )$/;"	f	class:DetectorConstruction	signature:( G4double wcdR )
+DetectorConstruction::~DetectorConstruction	DetectorConstruction.cc	/^DetectorConstruction::~DetectorConstruction()$/;"	f	class:DetectorConstruction	signature:()
+DetectorMessenger	DetectorMessenger.cc	/^  DetectorMessenger(DetectorConstruction* detectCons)$/;"	f	class:DetectorMessenger	signature:(DetectorConstruction* detectCons)
+DetectorMessenger::DetectorMessenger	DetectorMessenger.cc	/^  DetectorMessenger(DetectorConstruction* detectCons)$/;"	f	class:DetectorMessenger	signature:(DetectorConstruction* detectCons)
+DetectorMessenger::SetNewValue	DetectorMessenger.cc	/^void DetectorMessenger::SetNewValue($/;"	f	class:DetectorMessenger	signature:( G4UIcommand* command, G4String newValue)
+DetectorMessenger::~DetectorMessenger	DetectorMessenger.cc	/^DetectorMessenger::~DetectorMessenger()$/;"	f	class:DetectorMessenger	signature:()
+DumpTable	water.cc	/^  myMPT1->DumpTable();$/;"	p	file:	signature:()
+DumpTable	water2.cc	/^  myMPT1->DumpTable();$/;"	p	file:	signature:()
+EndOfEventAction	EventAction.cc	/^void EventAction::EndOfEventAction(const G4Event* event)$/;"	f	class:EventAction	signature:(const G4Event* event)
+EndOfRunAction	RunAction.cc	/^void RunAction::EndOfRunAction(const G4Run* aRun)$/;"	f	class:RunAction	signature:(const G4Run* aRun)
+EventAction	EventAction.cc	/^EventAction::EventAction(RunAction* runAction, PrimaryGeneratorAction* primaryGenAction)$/;"	f	class:EventAction	signature:(RunAction* runAction, PrimaryGeneratorAction* primaryGenAction)
+EventAction::BeginOfEventAction	EventAction.cc	/^void EventAction::BeginOfEventAction(const G4Event* event)$/;"	f	class:EventAction	signature:(const G4Event* event)
+EventAction::EndOfEventAction	EventAction.cc	/^void EventAction::EndOfEventAction(const G4Event* event)$/;"	f	class:EventAction	signature:(const G4Event* event)
+EventAction::EventAction	EventAction.cc	/^EventAction::EventAction(RunAction* runAction, PrimaryGeneratorAction* primaryGenAction)$/;"	f	class:EventAction	signature:(RunAction* runAction, PrimaryGeneratorAction* primaryGenAction)
+EventAction::countingCerenkovs	EventAction.cc	/^void EventAction::countingCerenkovs(G4double trackLength)$/;"	f	class:EventAction	signature:(G4double trackLength)
+EventAction::countingCerenkovs	EventAction.cc	/^void EventAction::countingCerenkovs(G4int cphoton)$/;"	f	class:EventAction	signature:(G4int cphoton)
+EventAction::~EventAction	EventAction.cc	/^EventAction::~EventAction()$/;"	f	class:EventAction	signature:()
+ExtraPhysics	ExtraPhysics.cc	/^ExtraPhysics::ExtraPhysics()$/;"	f	class:ExtraPhysics	signature:()
+ExtraPhysics::ConstructParticle	ExtraPhysics.cc	/^void ExtraPhysics::ConstructParticle() { }$/;"	f	class:ExtraPhysics	signature:()
+ExtraPhysics::ConstructProcess	ExtraPhysics.cc	/^void ExtraPhysics::ConstructProcess()$/;"	f	class:ExtraPhysics	signature:()
+ExtraPhysics::ExtraPhysics	ExtraPhysics.cc	/^ExtraPhysics::ExtraPhysics()$/;"	f	class:ExtraPhysics	signature:()
+ExtraPhysics::~ExtraPhysics	ExtraPhysics.cc	/^ExtraPhysics::~ExtraPhysics() { }$/;"	f	class:ExtraPhysics	signature:()
+Fill	CerValHistograms.cc	/^  histPhoVcm->Fill(nphoVcm);  $/;"	p	file:	signature:(nphoVcm)
+Fill	histosRun.cc	/^      histCerenPhoAll->Fill(cAllCerPho);$/;"	p	file:	signature:(cAllCerPho)
+Fill	histosRun.cc	/^      histCerenPhoElec->Fill(cElecCerPho);$/;"	p	file:	signature:(cElecCerPho)
+Fill	histosRun.cc	/^      histCerenPhoElectAll->Fill(cAllPhoElect);$/;"	p	file:	signature:(cAllPhoElect)
+Fill	histosRun.cc	/^      histCerenPhoElectElec->Fill(cElecPhoElect);$/;"	p	file:	signature:(cElecPhoElect)
+Fill	histosRun.cc	/^      histCerenPhoElectGamm->Fill(cGammPhoElect);$/;"	p	file:	signature:(cGammPhoElect)
+Fill	histosRun.cc	/^      histCerenPhoElectHadr->Fill(cHadrPhoElect);$/;"	p	file:	signature:(cHadrPhoElect)
+Fill	histosRun.cc	/^      histCerenPhoElectMuon->Fill(cMuonPhoElect);$/;"	p	file:	signature:(cMuonPhoElect)
+Fill	histosRun.cc	/^      histCerenPhoElectNeut->Fill(cNeutPhoElect);$/;"	p	file:	signature:(cNeutPhoElect)
+Fill	histosRun.cc	/^      histCerenPhoGamm->Fill(cGammCerPho);$/;"	p	file:	signature:(cGammCerPho)
+Fill	histosRun.cc	/^      histCerenPhoHadr->Fill(cHadrCerPho);$/;"	p	file:	signature:(cHadrCerPho)
+Fill	histosRun.cc	/^      histCerenPhoMuon->Fill(cMuonCerPho);$/;"	p	file:	signature:(cMuonCerPho)
+Fill	histosRun.cc	/^      histCerenPhoNeut->Fill(cNeutCerPho);$/;"	p	file:	signature:(cNeutCerPho)
+Fill	histosRun.cc	/^      histCerenPhoPmtAll->Fill(cAllPhoPmt);$/;"	p	file:	signature:(cAllPhoPmt)
+Fill	histosRun.cc	/^      histCerenPhoPmtElec->Fill(cElecPhoPmt);$/;"	p	file:	signature:(cElecPhoPmt)
+Fill	histosRun.cc	/^      histCerenPhoPmtGamm->Fill(cGammPhoPmt);$/;"	p	file:	signature:(cGammPhoPmt)
+Fill	histosRun.cc	/^      histCerenPhoPmtHadr->Fill(cHadrPhoPmt);$/;"	p	file:	signature:(cHadrPhoPmt)
+Fill	histosRun.cc	/^      histCerenPhoPmtMuon->Fill(cMuonPhoPmt);$/;"	p	file:	signature:(cMuonPhoPmt)
+Fill	histosRun.cc	/^      histCerenPhoPmtNeut->Fill(cNeutPhoPmt);$/;"	p	file:	signature:(cNeutPhoPmt)
+Fill	histosRun.cc	/^      histMeanPulseAll->Fill(time);$/;"	p	file:	signature:(time)
+Fill	histosRun.cc	/^      histMeanPulseElec->Fill(time);$/;"	p	file:	signature:(time)
+Fill	histosRun.cc	/^      histMeanPulseGamm->Fill(time);$/;"	p	file:	signature:(time)
+Fill	histosRun.cc	/^      histMeanPulseHadr->Fill(time);$/;"	p	file:	signature:(time)
+Fill	histosRun.cc	/^      histMeanPulseMuon->Fill(time);$/;"	p	file:	signature:(time)
+Fill	histosRun.cc	/^      histMeanPulseNeut->Fill(time);$/;"	p	file:	signature:(time)
+Fill	histosRun.cc	/^  histPartInject->Fill(part);$/;"	p	file:	signature:(part)
+Fill	histosRun.cc	/^  histPostInject->Fill(partPosX, partPosY);$/;"	p	file:	signature:(partPosX, partPosY)
+G4LogicalBorderSurface::CleanSurfaceTable	DetectorConstruction.cc	/^  G4LogicalBorderSurface::CleanSurfaceTable();$/;"	p	class:G4LogicalBorderSurface	file:	signature:()
+G4LogicalSkinSurface::CleanSurfaceTable	DetectorConstruction.cc	/^  G4LogicalSkinSurface::CleanSurfaceTable();$/;"	p	class:G4LogicalSkinSurface	file:	signature:()
+G4LossTableManager::Instance	PhysicsList.cc	/^    G4LossTableManager::Instance();$/;"	p	class:G4LossTableManager	file:	signature:()
+G4OpticalPhoton::OpticalPhotonDefinition	OpticalPhysics.cc	/^  G4OpticalPhoton::OpticalPhotonDefinition();$/;"	p	class:G4OpticalPhoton	file:	signature:()
+G4VModularPhysicsList::ConstructParticle	PhysicsList.cc	/^    G4VModularPhysicsList::ConstructParticle();$/;"	p	class:G4VModularPhysicsList	file:	signature:()
+G4VModularPhysicsList::ConstructProcess	PhysicsList.cc	/^    G4VModularPhysicsList::ConstructProcess();$/;"	p	class:G4VModularPhysicsList	file:	signature:()
+G4endl	ActionInitialization.cc	/^   G4cout << "...ActionInitialization..." << G4endl;$/;"	l
+G4endl	CerValHistograms.cc	/^  G4cout << "...CerValHistograms..." << G4endl;$/;"	l
+G4endl	CerValHistograms.cc	/^  G4cout << "here doHistCerPho: " << nphoVcm << G4endl;$/;"	l
+G4endl	CerenkovValidation.cc	/^      G4cout << "Total cerPho: " << cerPho << G4endl;$/;"	l
+G4endl	CerenkovValidation.cc	/^      G4cout << "Total cerPhoElect: " << cerPhoElect << G4endl;$/;"	l
+G4endl	CerenkovValidation.cc	/^      G4cout << "Total cerPhoOnPmt: " << cerPhoOnPmt << G4endl;$/;"	l
+G4endl	CerenkovValidation.cc	/^  G4cout << "...CerenkovValidation..." << G4endl;$/;"	l
+G4endl	DetectorConstruction.cc	/^   G4cout << "...DetectorConstruction..." << G4endl;$/;"	l
+G4endl	DetectorMessenger.cc	/^   G4cout << "...DetectorMessenger..." << G4endl;$/;"	l
+G4endl	EventAction.cc	/^  G4cout << "...EventAction..." << G4endl;$/;"	l
+G4endl	ExtraPhysics.cc	/^              << G4endl;$/;"	l
+G4endl	OpticalPhysics.cc	/^           << G4endl;$/;"	l
+G4endl	PMTSD.cc	/^  G4cout << "...PMTSD..." << G4endl;$/;"	l
+G4endl	PrimaryGeneratorAction.cc	/^               "the particleGun is not an opticalphoton" << G4endl;$/;"	l
+G4endl	PrimaryGeneratorAction.cc	/^  G4cout << "...PrimaryGeneratorAction..." << G4endl;$/;"	l
+G4endl	PrimaryGeneratorMessenger.cc	/^    G4cout << "Testing Messenger Class" << G4endl;$/;"	l
+G4endl	PrimaryGeneratorMessenger.cc	/^   G4cout << "...PrimaryGeneratorMessenger..." << G4endl;$/;"	l
+G4endl	PrimarySpectrum.cc	/^	G4cout << "File was opened" << G4endl;$/;"	l
+G4endl	PrimarySpectrumMessenger.cc	/^  G4cout << "...PrimarySpectrumMessenger..." << G4endl;$/;"	l
+G4endl	RunAction.cc	/^         << " " << *fTimer << G4endl;$/;"	l
+G4endl	RunAction.cc	/^  G4cout << "...RunAction..." << G4endl;$/;"	l
+G4endl	SteppingAction.cc	/^  G4cout << "...SteppingAction..." << G4endl; $/;"	l
+G4endl	SteppingVerbose.cc	/^               << G4endl;$/;"	l
+G4endl	SteppingVerbose.cc	/^          G4cout << G4endl;$/;"	l
+G4endl	SteppingVerbose.cc	/^      G4cout << G4endl;$/;"	l
+G4endl	SteppingVerbose.cc	/^    G4cout << "    initStep" << G4endl;$/;"	l
+G4endl	SteppingVerbose.cc	/^    G4cout << G4endl;$/;"	l
+G4endl	SteppingVerbose.cc	/^   G4cout << "...SteppingVerbose..." << G4endl;$/;"	l
+G4endl	grdFloor.cc	/^  G4cout << "...Creating Ground..." << G4endl;$/;"	l
+G4endl	histosRun.cc	/^   G4cout << "...histosRun..." << G4endl;$/;"	l
+G4endl	water.cc	/^  G4cout << "...Creating water..." << G4endl;$/;"	l
+G4endl	water.cc	/^  G4cout << "Water G4MaterialPropertiesTable" << G4endl;$/;"	l
+G4endl	water2.cc	/^  G4cout << "...Creating water..." << G4endl;$/;"	l
+G4endl	water2.cc	/^  G4cout << "Water G4MaterialPropertiesTable" << G4endl;$/;"	l
+G4endl	wcdLagoCont.cc	/^  G4cout << "...wcdLago..." << G4endl;$/;"	l
+G4endl	wcdpmt.cc	/^  G4cout << "...pmt..." << G4endl;$/;"	l
+G4endl	world.cc	/^  G4cout << "...world..." << G4endl;$/;"	l
+GeneratePrimaries	PrimaryGeneratorAction.cc	/^void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)$/;"	f	class:PrimaryGeneratorAction	signature:(G4Event* anEvent)
+GeneratePrimaryVertex	PrimaryGeneratorAction.cc	/^  fParticleGun->GeneratePrimaryVertex(anEvent);$/;"	p	file:	signature:(anEvent)
+GetMeanFreePath	StepMax.cc	/^G4double StepMax::GetMeanFreePath(const G4Track&,G4double,G4ForceCondition*)$/;"	f	class:StepMax	signature:(const G4Track&,G4double,G4ForceCondition*)
+GetNewBoolValue	PhysicsListMessenger.cc	/^       fPhysicsList->SetAbsorption(G4UIcmdWithABool::GetNewBoolValue(newValue));$/;"	p	file:	signature:(newValue)
+GetStepMaxProcess	PhysicsList.cc	/^StepMax* PhysicsList::GetStepMaxProcess()$/;"	f	class:PhysicsList	signature:()
+GetWavelength	CerenkovValidation.cc	/^void CerenkovValidation::GetWavelength(G4double phoEner)$/;"	f	class:CerenkovValidation	signature:(G4double phoEner)
+Initialize	StepMax.cc	/^   aParticleChange.Initialize(aTrack);$/;"	p	file:	signature:(aTrack)
+InitializeSteppingVerbose	ActionInitialization.cc	/^G4VSteppingVerbose* ActionInitialization::InitializeSteppingVerbose() const$/;"	f	class:ActionInitialization	signature:() const
+Insert	PhysicsList.cc	/^    MuonMinusDecayTable -> Insert(new$/;"	p	file:	signature:(new G4MuonDecayChannelWithSpin(Ó,0.986))
+Insert	PhysicsList.cc	/^    MuonMinusDecayTable -> Insert(new$/;"	p	file:	signature:(new G4MuonRadiativeDecayChannelWithSpin(Ó,0.014))
+Insert	PhysicsList.cc	/^    MuonPlusDecayTable -> Insert(new$/;"	p	file:	signature:(new G4MuonDecayChannelWithSpin(Ó,0.986))
+Insert	PhysicsList.cc	/^    MuonPlusDecayTable -> Insert(new$/;"	p	file:	signature:(new G4MuonRadiativeDecayChannelWithSpin(Ó,0.014))
+Insert	PhysicsListMessenger.cc	/^       table->Insert(mode);$/;"	p	file:	signature:(mode)
+Instance	PhysicsList.cc	/^    G4LossTableManager::Instance();$/;"	p	class:G4LossTableManager	file:	signature:()
+IsApplicable	StepMax.cc	/^G4bool StepMax::IsApplicable(const G4ParticleDefinition& particle)$/;"	f	class:StepMax	signature:(const G4ParticleDefinition& particle)
+MIEFF	water2.cc	/^  G4double MIEFF = 1.;$/;"	l
+Merge	RunAction.cc	/^  accumulableManager->Merge();$/;"	p	file:	signature:()
+MuonMinusDecayTable	PhysicsList.cc	/^    G4DecayTable* MuonMinusDecayTable = new G4DecayTable();$/;"	l
+MuonPlusDecayTable	PhysicsList.cc	/^    G4DecayTable* MuonPlusDecayTable = new G4DecayTable();$/;"	l
+OpticalPhotonDefinition	OpticalPhysics.cc	/^  G4OpticalPhoton::OpticalPhotonDefinition();$/;"	p	class:G4OpticalPhoton	file:	signature:()
+OpticalPhysics	OpticalPhysics.cc	/^OpticalPhysics::OpticalPhysics(G4bool toggle)$/;"	f	class:OpticalPhysics	signature:(G4bool toggle)
+OpticalPhysics::ConstructParticle	OpticalPhysics.cc	/^void OpticalPhysics::ConstructParticle()$/;"	f	class:OpticalPhysics	signature:()
+OpticalPhysics::ConstructProcess	OpticalPhysics.cc	/^void OpticalPhysics::ConstructProcess()$/;"	f	class:OpticalPhysics	signature:()
+OpticalPhysics::OpticalPhysics	OpticalPhysics.cc	/^OpticalPhysics::OpticalPhysics(G4bool toggle)$/;"	f	class:OpticalPhysics	signature:(G4bool toggle)
+OpticalPhysics::SetNbOfPhotonsCerenkov	OpticalPhysics.cc	/^void OpticalPhysics::SetNbOfPhotonsCerenkov(G4int maxNumber)$/;"	f	class:OpticalPhysics	signature:(G4int maxNumber)
+OpticalPhysics::~OpticalPhysics	OpticalPhysics.cc	/^OpticalPhysics::~OpticalPhysics() { }$/;"	f	class:OpticalPhysics	signature:()
+PMTHit	PMTHit.cc	/^PMTHit::PMTHit()$/;"	f	class:PMTHit	signature:()
+PMTHit::PMTHit	PMTHit.cc	/^PMTHit::PMTHit()$/;"	f	class:PMTHit	signature:()
+PMTHit::askDetected	PMTHit.cc	/^G4int PMTHit::askDetected(G4double phoEner)$/;"	f	class:PMTHit	signature:(G4double phoEner)
+PMTHit::~PMTHit	PMTHit.cc	/^PMTHit::~PMTHit()$/;"	f	class:PMTHit	signature:()
+PMTHitAllocator	PMTHit.cc	/^G4ThreadLocal G4Allocator<PMTHit>* PMTHitAllocator=0;$/;"	v
+PMTSD	PMTSD.cc	/^PMTSD::PMTSD()$/;"	f	class:PMTSD	signature:()
+PMTSD::PMTSD	PMTSD.cc	/^PMTSD::PMTSD()$/;"	f	class:PMTSD	signature:()
+PMTSD::ProcessHits	PMTSD.cc	/^G4int PMTSD::ProcessHits(const G4Step* aStep, G4double time)$/;"	f	class:PMTSD	signature:(const G4Step* aStep, G4double time)
+PMTSD::doPulse	PMTSD.cc	/^void PMTSD::doPulse(G4double time)\/\/const G4Track* track, G4double time)$/;"	f	class:PMTSD	signature:(G4double time)
+PMTSD::resetPMTSD	PMTSD.cc	/^void PMTSD::resetPMTSD()$/;"	f	class:PMTSD	signature:()
+PMTSD::~PMTSD	PMTSD.cc	/^PMTSD::~PMTSD()$/;"	f	class:PMTSD	signature:()
+PhysicsList	PhysicsList.cc	/^PhysicsList::PhysicsList(G4String physName) : G4VModularPhysicsList()$/;"	f	class:PhysicsList	signature:(G4String physName)
+PhysicsList::AddStepMax	PhysicsList.cc	/^void PhysicsList::AddStepMax()$/;"	f	class:PhysicsList	signature:()
+PhysicsList::ClearPhysics	PhysicsList.cc	/^void PhysicsList::ClearPhysics()$/;"	f	class:PhysicsList	signature:()
+PhysicsList::ConstructParticle	PhysicsList.cc	/^void PhysicsList::ConstructParticle()$/;"	f	class:PhysicsList	signature:()
+PhysicsList::ConstructProcess	PhysicsList.cc	/^void PhysicsList::ConstructProcess()$/;"	f	class:PhysicsList	signature:()
+PhysicsList::GetStepMaxProcess	PhysicsList.cc	/^StepMax* PhysicsList::GetStepMaxProcess()$/;"	f	class:PhysicsList	signature:()
+PhysicsList::PhysicsList	PhysicsList.cc	/^PhysicsList::PhysicsList(G4String physName) : G4VModularPhysicsList()$/;"	f	class:PhysicsList	signature:(G4String physName)
+PhysicsList::RemoveFromPhysicsList	PhysicsList.cc	/^void PhysicsList::RemoveFromPhysicsList(const G4String& name)$/;"	f	class:PhysicsList	signature:(const G4String& name)
+PhysicsList::SetAbsorption	PhysicsList.cc	/^void PhysicsList::SetAbsorption(G4bool toggle)$/;"	f	class:PhysicsList	signature:(G4bool toggle)
+PhysicsList::SetCutForElectron	PhysicsList.cc	/^void PhysicsList::SetCutForElectron(G4double cut)$/;"	f	class:PhysicsList	signature:(G4double cut)
+PhysicsList::SetCutForGamma	PhysicsList.cc	/^void PhysicsList::SetCutForGamma(G4double cut)$/;"	f	class:PhysicsList	signature:(G4double cut)
+PhysicsList::SetCutForPositron	PhysicsList.cc	/^void PhysicsList::SetCutForPositron(G4double cut)$/;"	f	class:PhysicsList	signature:(G4double cut)
+PhysicsList::SetCuts	PhysicsList.cc	/^void PhysicsList::SetCuts()$/;"	f	class:PhysicsList	signature:()
+PhysicsList::SetNbOfPhotonsCerenkov	PhysicsList.cc	/^void PhysicsList::SetNbOfPhotonsCerenkov(G4int maxNumber)$/;"	f	class:PhysicsList	signature:(G4int maxNumber)
+PhysicsList::SetStepMax	PhysicsList.cc	/^void PhysicsList::SetStepMax(G4double step)$/;"	f	class:PhysicsList	signature:(G4double step)
+PhysicsList::SetVerbose	PhysicsList.cc	/^void PhysicsList::SetVerbose(G4int verbose)$/;"	f	class:PhysicsList	signature:(G4int verbose)
+PhysicsList::~PhysicsList	PhysicsList.cc	/^PhysicsList::~PhysicsList()$/;"	f	class:PhysicsList	signature:()
+PhysicsListMessenger	PhysicsListMessenger.cc	/^PhysicsListMessenger::PhysicsListMessenger(PhysicsList* pPhys)$/;"	f	class:PhysicsListMessenger	signature:(PhysicsList* pPhys)
+PhysicsListMessenger::PhysicsListMessenger	PhysicsListMessenger.cc	/^PhysicsListMessenger::PhysicsListMessenger(PhysicsList* pPhys)$/;"	f	class:PhysicsListMessenger	signature:(PhysicsList* pPhys)
+PhysicsListMessenger::SetNewValue	PhysicsListMessenger.cc	/^void PhysicsListMessenger::SetNewValue(G4UIcommand* command,$/;"	f	class:PhysicsListMessenger	signature:(G4UIcommand* command, G4String newValue)
+PhysicsListMessenger::~PhysicsListMessenger	PhysicsListMessenger.cc	/^PhysicsListMessenger::~PhysicsListMessenger()$/;"	f	class:PhysicsListMessenger	signature:()
+PostStepDoIt	StepMax.cc	/^G4VParticleChange* StepMax::PostStepDoIt(const G4Track& aTrack,$/;"	f	class:StepMax	signature:(const G4Track& aTrack, const G4Step& )
+PostStepGetPhysicalInteractionLength	StepMax.cc	/^G4double StepMax::PostStepGetPhysicalInteractionLength($/;"	f	class:StepMax	signature:( const G4Track&, G4double, G4ForceCondition* condition)
+PrimaryGeneratorAction	PrimaryGeneratorAction.cc	/^PrimaryGeneratorAction::PrimaryGeneratorAction(PrimarySpectrum* crkPart)$/;"	f	class:PrimaryGeneratorAction	signature:(PrimarySpectrum* crkPart)
+PrimaryGeneratorAction::GeneratePrimaries	PrimaryGeneratorAction.cc	/^void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)$/;"	f	class:PrimaryGeneratorAction	signature:(G4Event* anEvent)
+PrimaryGeneratorAction::PrimaryGeneratorAction	PrimaryGeneratorAction.cc	/^PrimaryGeneratorAction::PrimaryGeneratorAction(PrimarySpectrum* crkPart)$/;"	f	class:PrimaryGeneratorAction	signature:(PrimarySpectrum* crkPart)
+PrimaryGeneratorAction::SetOptPhotonPolar	PrimaryGeneratorAction.cc	/^void PrimaryGeneratorAction::SetOptPhotonPolar()$/;"	f	class:PrimaryGeneratorAction	signature:()
+PrimaryGeneratorAction::SetOptPhotonPolar	PrimaryGeneratorAction.cc	/^void PrimaryGeneratorAction::SetOptPhotonPolar(G4double angle)$/;"	f	class:PrimaryGeneratorAction	signature:(G4double angle)
+PrimaryGeneratorAction::~PrimaryGeneratorAction	PrimaryGeneratorAction.cc	/^PrimaryGeneratorAction::~PrimaryGeneratorAction()$/;"	f	class:PrimaryGeneratorAction	signature:()
+PrimaryGeneratorMessenger	PrimaryGeneratorMessenger.cc	/^  PrimaryGeneratorMessenger(PrimaryGeneratorAction* Gun)$/;"	f	class:PrimaryGeneratorMessenger	signature:(PrimaryGeneratorAction* Gun)
+PrimaryGeneratorMessenger::PrimaryGeneratorMessenger	PrimaryGeneratorMessenger.cc	/^  PrimaryGeneratorMessenger(PrimaryGeneratorAction* Gun)$/;"	f	class:PrimaryGeneratorMessenger	signature:(PrimaryGeneratorAction* Gun)
+PrimaryGeneratorMessenger::SetNewValue	PrimaryGeneratorMessenger.cc	/^void PrimaryGeneratorMessenger::SetNewValue($/;"	f	class:PrimaryGeneratorMessenger	signature:( G4UIcommand* command, G4String newValue)
+PrimaryGeneratorMessenger::SetParticleMomentum	PrimaryGeneratorMessenger.cc	/^void PrimaryGeneratorMessenger::SetParticleMomentum(G4ThreeVector direction)$/;"	f	class:PrimaryGeneratorMessenger	signature:(G4ThreeVector direction)
+PrimaryGeneratorMessenger::~PrimaryGeneratorMessenger	PrimaryGeneratorMessenger.cc	/^PrimaryGeneratorMessenger::~PrimaryGeneratorMessenger()$/;"	f	class:PrimaryGeneratorMessenger	signature:()
+PrimarySpectrum	PrimarySpectrum.cc	/^PrimarySpectrum::PrimarySpectrum():$/;"	f	class:PrimarySpectrum	signature:()
+PrimarySpectrum::PrimarySpectrum	PrimarySpectrum.cc	/^PrimarySpectrum::PrimarySpectrum():$/;"	f	class:PrimarySpectrum	signature:()
+PrimarySpectrum::openFile	PrimarySpectrum.cc	/^int PrimarySpectrum::openFile(std::string name)$/;"	f	class:PrimarySpectrum	signature:(std::string name)
+PrimarySpectrum::primaryMomento	PrimarySpectrum.cc	/^void PrimarySpectrum::primaryMomento()$/;"	f	class:PrimarySpectrum	signature:()
+PrimarySpectrum::primaryPosition	PrimarySpectrum.cc	/^void PrimarySpectrum::primaryPosition()$/;"	f	class:PrimarySpectrum	signature:()
+PrimarySpectrum::setInitPosZ	PrimarySpectrum.cc	/^void PrimarySpectrum::setInitPosZ(G4double zz)$/;"	f	class:PrimarySpectrum	signature:(G4double zz)
+PrimarySpectrum::setRoArea	PrimarySpectrum.cc	/^void PrimarySpectrum::setRoArea(G4double rr)$/;"	f	class:PrimarySpectrum	signature:(G4double rr)
+PrimarySpectrum::~PrimarySpectrum	PrimarySpectrum.cc	/^PrimarySpectrum::~PrimarySpectrum()$/;"	f	class:PrimarySpectrum	signature:()
+PrimarySpectrumMessenger	PrimarySpectrumMessenger.cc	/^  PrimarySpectrumMessenger(PrimarySpectrum* spectrum)$/;"	f	class:PrimarySpectrumMessenger	signature:(PrimarySpectrum* spectrum)
+PrimarySpectrumMessenger::PrimarySpectrumMessenger	PrimarySpectrumMessenger.cc	/^  PrimarySpectrumMessenger(PrimarySpectrum* spectrum)$/;"	f	class:PrimarySpectrumMessenger	signature:(PrimarySpectrum* spectrum)
+PrimarySpectrumMessenger::SetNewValue	PrimarySpectrumMessenger.cc	/^void PrimarySpectrumMessenger::SetNewValue($/;"	f	class:PrimarySpectrumMessenger	signature:( G4UIcommand* command, G4String inFl)
+PrimarySpectrumMessenger::~PrimarySpectrumMessenger	PrimarySpectrumMessenger.cc	/^PrimarySpectrumMessenger::~PrimarySpectrumMessenger()$/;"	f	class:PrimarySpectrumMessenger	signature:()
+ProcessHits	PMTSD.cc	/^G4int PMTSD::ProcessHits(const G4Step* aStep, G4double time)$/;"	f	class:PMTSD	signature:(const G4Step* aStep, G4double time)
+ProposedStep	StepMax.cc	/^  G4double ProposedStep = DBL_MAX;$/;"	l
+RemoveFromPhysicsList	PhysicsList.cc	/^void PhysicsList::RemoveFromPhysicsList(const G4String& name)$/;"	f	class:PhysicsList	signature:(const G4String& name)
+RemoveFromPhysicsList	PhysicsListMessenger.cc	/^        fPhysicsList->RemoveFromPhysicsList(name);$/;"	p	file:	signature:(name)
+RemoveProcess	PhysicsList.cc	/^      if (decay) pManager->RemoveProcess(decay);$/;"	p	file:	signature:(decay)
+RunAction	RunAction.cc	/^RunAction::RunAction()$/;"	f	class:RunAction	signature:()
+RunAction::BeginOfRunAction	RunAction.cc	/^void RunAction::BeginOfRunAction(const G4Run* aRun)$/;"	f	class:RunAction	signature:(const G4Run* aRun)
+RunAction::EndOfRunAction	RunAction.cc	/^void RunAction::EndOfRunAction(const G4Run* aRun)$/;"	f	class:RunAction	signature:(const G4Run* aRun)
+RunAction::RunAction	RunAction.cc	/^RunAction::RunAction()$/;"	f	class:RunAction	signature:()
+RunAction::closeCerenkValid	RunAction.cc	/^void RunAction::closeCerenkValid()$/;"	f	class:RunAction	signature:()
+RunAction::closeCoulombValid	RunAction.cc	/^void RunAction::closeCoulombValid()$/;"	f	class:RunAction	signature:()
+RunAction::fillHistPhoVcm	RunAction.cc	/^void RunAction::fillHistPhoVcm()$/;"	f	class:RunAction	signature:()
+RunAction::startCerenkValid	RunAction.cc	/^void RunAction::startCerenkValid()$/;"	f	class:RunAction	signature:()
+RunAction::startCoulombValid	RunAction.cc	/^void RunAction::startCoulombValid()$/;"	f	class:RunAction	signature:()
+RunAction::~RunAction	RunAction.cc	/^RunAction::~RunAction()$/;"	f	class:RunAction	signature:()
+SetAbsorption	PhysicsList.cc	/^void PhysicsList::SetAbsorption(G4bool toggle)$/;"	f	class:PhysicsList	signature:(G4bool toggle)
+SetCutForElectron	PhysicsList.cc	/^void PhysicsList::SetCutForElectron(G4double cut)$/;"	f	class:PhysicsList	signature:(G4double cut)
+SetCutForElectron	PhysicsListMessenger.cc	/^        fPhysicsList->SetCutForElectron(cut);$/;"	p	file:	signature:(cut)
+SetCutForGamma	PhysicsList.cc	/^void PhysicsList::SetCutForGamma(G4double cut)$/;"	f	class:PhysicsList	signature:(G4double cut)
+SetCutForGamma	PhysicsListMessenger.cc	/^        fPhysicsList->SetCutForGamma(cut);$/;"	p	file:	signature:(cut)
+SetCutForPositron	PhysicsList.cc	/^void PhysicsList::SetCutForPositron(G4double cut)$/;"	f	class:PhysicsList	signature:(G4double cut)
+SetCutForPositron	PhysicsListMessenger.cc	/^        fPhysicsList->SetCutForPositron(cut);$/;"	p	file:	signature:(cut)
+SetCuts	PhysicsList.cc	/^void PhysicsList::SetCuts()$/;"	f	class:PhysicsList	signature:()
+SetDecayTable	PhysicsListMessenger.cc	/^       particleDef->SetDecayTable(table);$/;"	p	file:	signature:(table)
+SetFinish	wcdLagoCalo.cc	/^  opWaterSurface->SetFinish(groundtyvekair);$/;"	p	file:	signature:(groundtyvekair)
+SetGuidance	PrimaryGeneratorMessenger.cc	/^  testCmd->SetGuidance(momentum.c_str());$/;"	p	file:	signature:(momentum.c_str())
+SetMaxNumPhotonsPerStep	OpticalPhysics.cc	/^  fCerenkovProcess->SetMaxNumPhotonsPerStep(maxNumber);$/;"	p	file:	signature:(maxNumber)
+SetModel	wcdLagoCalo.cc	/^  opWaterSurface->SetModel(LUT);$/;"	p	file:	signature:(LUT)
+SetNbOfPhotonsCerenkov	OpticalPhysics.cc	/^void OpticalPhysics::SetNbOfPhotonsCerenkov(G4int maxNumber)$/;"	f	class:OpticalPhysics	signature:(G4int maxNumber)
+SetNbOfPhotonsCerenkov	PhysicsList.cc	/^   fOpticalPhysics->SetNbOfPhotonsCerenkov(maxNumber);$/;"	p	file:	signature:(maxNumber)
+SetNbOfPhotonsCerenkov	PhysicsList.cc	/^void PhysicsList::SetNbOfPhotonsCerenkov(G4int maxNumber)$/;"	f	class:PhysicsList	signature:(G4int maxNumber)
+SetNewValue	DetectorMessenger.cc	/^void DetectorMessenger::SetNewValue($/;"	f	class:DetectorMessenger	signature:( G4UIcommand* command, G4String newValue)
+SetNewValue	PhysicsListMessenger.cc	/^void PhysicsListMessenger::SetNewValue(G4UIcommand* command,$/;"	f	class:PhysicsListMessenger	signature:(G4UIcommand* command, G4String newValue)
+SetNewValue	PrimaryGeneratorMessenger.cc	/^void PrimaryGeneratorMessenger::SetNewValue($/;"	f	class:PrimaryGeneratorMessenger	signature:( G4UIcommand* command, G4String newValue)
+SetNewValue	PrimarySpectrumMessenger.cc	/^void PrimarySpectrumMessenger::SetNewValue($/;"	f	class:PrimarySpectrumMessenger	signature:( G4UIcommand* command, G4String inFl)
+SetOptPhotonPolar	PrimaryGeneratorAction.cc	/^void PrimaryGeneratorAction::SetOptPhotonPolar()$/;"	f	class:PrimaryGeneratorAction	signature:()
+SetOptPhotonPolar	PrimaryGeneratorAction.cc	/^void PrimaryGeneratorAction::SetOptPhotonPolar(G4double angle)$/;"	f	class:PrimaryGeneratorAction	signature:(G4double angle)
+SetOptPhotonPolar	PrimaryGeneratorMessenger.cc	/^         fAction->SetOptPhotonPolar();$/;"	p	file:	signature:()
+SetOptPhotonPolar	PrimaryGeneratorMessenger.cc	/^         fAction->SetOptPhotonPolar(angle);$/;"	p	file:	signature:(angle)
+SetParticleDefinition	PrimaryGeneratorAction.cc	/^  fParticleGun->SetParticleDefinition(particle);$/;"	p	file:	signature:(particle)
+SetParticleMomentum	PrimaryGeneratorMessenger.cc	/^void PrimaryGeneratorMessenger::SetParticleMomentum(G4ThreeVector direction)$/;"	f	class:PrimaryGeneratorMessenger	signature:(G4ThreeVector direction)
+SetParticlePolarization	PrimaryGeneratorAction.cc	/^ fParticleGun->SetParticlePolarization(polar);$/;"	p	file:	signature:(polar)
+SetProcessOrdering	OpticalPhysics.cc	/^      pManager->SetProcessOrdering(fCerenkovProcess,idxPostStep);$/;"	p	file:	signature:(fCerenkovProcess,idxPostStep)
+SetProcessOrdering	PhysicsList.cc	/^      pManager ->SetProcessOrdering(decayWithSpin, idxAtRest);$/;"	p	file:	signature:(decayWithSpin, idxAtRest)
+SetProcessOrdering	PhysicsList.cc	/^      pManager ->SetProcessOrdering(decayWithSpin, idxPostStep);$/;"	p	file:	signature:(decayWithSpin, idxPostStep)
+SetProcessOrdering	PhysicsList.cc	/^      pManager ->SetProcessOrdering(poldecay, idxAtRest);$/;"	p	file:	signature:(poldecay, idxAtRest)
+SetProcessOrdering	PhysicsList.cc	/^      pManager ->SetProcessOrdering(poldecay, idxPostStep);$/;"	p	file:	signature:(poldecay, idxPostStep)
+SetProcessOrderingToLast	OpticalPhysics.cc	/^      pManager->SetProcessOrderingToLast(fScintProcess,idxAtRest);$/;"	p	file:	signature:(fScintProcess,idxAtRest)
+SetProcessOrderingToLast	OpticalPhysics.cc	/^      pManager->SetProcessOrderingToLast(fScintProcess,idxPostStep);$/;"	p	file:	signature:(fScintProcess,idxPostStep)
+SetStepMax	PhysicsList.cc	/^  fStepMaxProcess->SetStepMax(step);$/;"	p	file:	signature:(step)
+SetStepMax	PhysicsList.cc	/^void PhysicsList::SetStepMax(G4double step)$/;"	f	class:PhysicsList	signature:(G4double step)
+SetStepMax	StepMax.cc	/^void StepMax::SetStepMax(G4double step) { fMaxChargedStep = step ; }$/;"	f	class:StepMax	signature:(G4double step)
+SetTrackSecondariesFirst	OpticalPhysics.cc	/^  fCerenkovProcess->SetTrackSecondariesFirst(true);$/;"	p	file:	signature:(true)
+SetTrackSecondariesFirst	OpticalPhysics.cc	/^  fScintProcess->SetTrackSecondariesFirst(true);$/;"	p	file:	signature:(true)
+SetTrackStatus	SteppingAction.cc	/^       track->SetTrackStatus(fStopAndKill);$/;"	p	file:	signature:(fStopAndKill)
+SetType	wcdLagoCalo.cc	/^  opWaterSurface->SetType(dielectric_LUT);$/;"	p	file:	signature:(dielectric_LUT)
+SetVerbose	PhysicsList.cc	/^void PhysicsList::SetVerbose(G4int verbose)$/;"	f	class:PhysicsList	signature:(G4int verbose)
+Start	RunAction.cc	/^  fTimer->Start();$/;"	p	file:	signature:()
+StepInfo	SteppingVerbose.cc	/^void SteppingVerbose::StepInfo()$/;"	f	class:SteppingVerbose	signature:()
+StepMax	StepMax.cc	/^StepMax::StepMax(StepMax& right) : G4VDiscreteProcess(right) { }$/;"	f	class:StepMax	signature:(StepMax& right)
+StepMax	StepMax.cc	/^StepMax::StepMax(const G4String& aName)$/;"	f	class:StepMax	signature:(const G4String& aName)
+StepMax::GetMeanFreePath	StepMax.cc	/^G4double StepMax::GetMeanFreePath(const G4Track&,G4double,G4ForceCondition*)$/;"	f	class:StepMax	signature:(const G4Track&,G4double,G4ForceCondition*)
+StepMax::IsApplicable	StepMax.cc	/^G4bool StepMax::IsApplicable(const G4ParticleDefinition& particle)$/;"	f	class:StepMax	signature:(const G4ParticleDefinition& particle)
+StepMax::PostStepDoIt	StepMax.cc	/^G4VParticleChange* StepMax::PostStepDoIt(const G4Track& aTrack,$/;"	f	class:StepMax	signature:(const G4Track& aTrack, const G4Step& )
+StepMax::PostStepGetPhysicalInteractionLength	StepMax.cc	/^G4double StepMax::PostStepGetPhysicalInteractionLength($/;"	f	class:StepMax	signature:( const G4Track&, G4double, G4ForceCondition* condition)
+StepMax::SetStepMax	StepMax.cc	/^void StepMax::SetStepMax(G4double step) { fMaxChargedStep = step ; }$/;"	f	class:StepMax	signature:(G4double step)
+StepMax::StepMax	StepMax.cc	/^StepMax::StepMax(StepMax& right) : G4VDiscreteProcess(right) { }$/;"	f	class:StepMax	signature:(StepMax& right)
+StepMax::StepMax	StepMax.cc	/^StepMax::StepMax(const G4String& aName)$/;"	f	class:StepMax	signature:(const G4String& aName)
+StepMax::~StepMax	StepMax.cc	/^StepMax::~StepMax() { }$/;"	f	class:StepMax	signature:()
+SteppingAction	SteppingAction.cc	/^SteppingAction::SteppingAction(EventAction* eventAction)$/;"	f	class:SteppingAction	signature:(EventAction* eventAction)
+SteppingAction::SteppingAction	SteppingAction.cc	/^SteppingAction::SteppingAction(EventAction* eventAction)$/;"	f	class:SteppingAction	signature:(EventAction* eventAction)
+SteppingAction::UserSteppingAction	SteppingAction.cc	/^void SteppingAction::UserSteppingAction(const G4Step* step)$/;"	f	class:SteppingAction	signature:(const G4Step* step)
+SteppingAction::~SteppingAction	SteppingAction.cc	/^SteppingAction::~SteppingAction()$/;"	f	class:SteppingAction	signature:()
+SteppingVerbose	SteppingVerbose.cc	/^SteppingVerbose::SteppingVerbose()$/;"	f	class:SteppingVerbose	signature:()
+SteppingVerbose::StepInfo	SteppingVerbose.cc	/^void SteppingVerbose::StepInfo()$/;"	f	class:SteppingVerbose	signature:()
+SteppingVerbose::SteppingVerbose	SteppingVerbose.cc	/^SteppingVerbose::SteppingVerbose()$/;"	f	class:SteppingVerbose	signature:()
+SteppingVerbose::TrackingStarted	SteppingVerbose.cc	/^void SteppingVerbose::TrackingStarted()$/;"	f	class:SteppingVerbose	signature:()
+SteppingVerbose::~SteppingVerbose	SteppingVerbose.cc	/^SteppingVerbose::~SteppingVerbose()$/;"	f	class:SteppingVerbose	signature:()
+Stop	RunAction.cc	/^  fTimer->Stop();$/;"	p	file:	signature:()
+StopPowDeepWater	CerenkovValidation.cc	/^void CerenkovValidation::StopPowDeepWater(const G4Step* step)$/;"	f	class:CerenkovValidation	signature:(const G4Step* step)
+TrackingStarted	SteppingVerbose.cc	/^void SteppingVerbose::TrackingStarted()$/;"	f	class:SteppingVerbose	signature:()
+UserSteppingAction	SteppingAction.cc	/^void SteppingAction::UserSteppingAction(const G4Step* step)$/;"	f	class:SteppingAction	signature:(const G4Step* step)
+Write	CerValHistograms.cc	/^  rfCerValHist->Write();$/;"	p	file:	signature:()
+Write	RunAction.cc	/^  analysisManager->Write();$/;"	p	file:	signature:()
+Write	histosRun.cc	/^  histosOutput->Write();$/;"	p	file:	signature:()
+a	grdFloor.cc	/^  G4double a = 0.;$/;"	l
+absLength	water.cc	/^  float absLength = .2;$/;"	l
+absorption	water.cc	/^  G4double absorption[] =$/;"	l
+absorption	water2.cc	/^  G4double absorption[] =$/;"	l
+accumulableManager	RunAction.cc	/^  G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();$/;"	l
+analysisManager	CerenkovValidation.cc	/^  G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();$/;"	l
+analysisManager	PMTSD.cc	/^  G4AnalysisManager* analysisManager $/;"	l
+angle	PrimaryGeneratorAction.cc	/^ G4double angle = G4UniformRand() * 360.0*deg;$/;"	l
+angle	PrimaryGeneratorMessenger.cc	/^      G4double angle = fPolarCmd->GetNewDoubleValue(newValue);$/;"	l
+askDetected	PMTHit.cc	/^G4int PMTHit::askDetected(G4double phoEner)$/;"	f	class:PMTHit	signature:(G4double phoEner)
+binForPhotons	histosRun.cc	/^  int binForPhotons = 100000;$/;"	l
+binForPulses	histosRun.cc	/^  int binForPulses = 20;$/;"	l
+binInsideDetec	histosRun.cc	/^  int binInsideDetec = 400;$/;"	l
+binforCphoSpect	histosRun.cc	/^  int binforCphoSpect = 1000;$/;"	l
+buildDetector	DetectorConstruction.cc	/^  grd->buildDetector(wcdHight, groundBase->getLogVolume(), &checkOverlaps);$/;"	p	file:	signature:(wcdHight, groundBase->getLogVolume(), &checkOverlaps)
+buildDetector	grdFloor.cc	/^void grdFloor::buildDetector(G4double grd_size, G4LogicalVolume* log_mother, G4bool* overLaps)$/;"	f	class:grdFloor	signature:(G4double grd_size, G4LogicalVolume* log_mother, G4bool* overLaps)
+buildDetector	wcdLagoCalo.cc	/^void wcdLagoCalo::buildDetector(G4LogicalVolume* log_mother, G4VPhysicalVolume* tank_phys, G4bool* overLaps, G4double radius, G4double hight)$/;"	f	class:wcdLagoCalo	signature:(G4LogicalVolume* log_mother, G4VPhysicalVolume* tank_phys, G4bool* overLaps, G4double radius, G4double hight)
+buildDetector	wcdLagoCont.cc	/^void wcdLagoCont::buildDetector(G4LogicalVolume* log_mother, G4bool* overLaps, G4double radius, G4double hight)$/;"	f	class:wcdLagoCont	signature:(G4LogicalVolume* log_mother, G4bool* overLaps, G4double radius, G4double hight)
+buildDetector	wcdpmt.cc	/^void wcdpmt::buildDetector(G4LogicalVolume* log_mother, G4double postZ, G4bool* overLaps)$/;"	f	class:wcdpmt	signature:(G4LogicalVolume* log_mother, G4double postZ, G4bool* overLaps)
+buildDetector	world.cc	/^void world::buildDetector(G4bool* overLaps)$/;"	f	class:world	signature:(G4bool* overLaps)
+buildDetector	worldGround.cc	/^void worldGround::buildDetector(G4LogicalVolume* log_mother, G4bool* overLaps)$/;"	f	class:worldGround	signature:(G4LogicalVolume* log_mother, G4bool* overLaps)
+cerenPho	histosRun.cc	/^void histosRun::cerenPho(int optCerenPho)$/;"	f	class:histosRun	signature:(int optCerenPho)
+cerenPhoElect	histosRun.cc	/^void histosRun::cerenPhoElect(int optCerenPhoElect, int wl)$/;"	f	class:histosRun	signature:(int optCerenPhoElect, int wl)
+cerenPhoPmt	histosRun.cc	/^void histosRun::cerenPhoPmt(int optCerenPhoPmt)$/;"	f	class:histosRun	signature:(int optCerenPhoPmt)
+charge	ExtraPhysics.cc	/^        G4double charge = particle->GetPDGCharge();$/;"	l
+clear	PhysicsList.cc	/^    fPhysicsVector->clear();$/;"	p	file:	signature:()
+clear	histosRun.cc	/^    cAllSpecPhoElect.clear();$/;"	p	file:	signature:()
+clear	histosRun.cc	/^  cElecSpecPhoElect.clear();$/;"	p	file:	signature:()
+clear	histosRun.cc	/^  cGammSpecPhoElect.clear();$/;"	p	file:	signature:()
+clear	histosRun.cc	/^  cHadrSpecPhoElect.clear();$/;"	p	file:	signature:()
+clear	histosRun.cc	/^  cMuonSpecPhoElect.clear();$/;"	p	file:	signature:()
+clear	histosRun.cc	/^  cNeutSpecPhoElect.clear();$/;"	p	file:	signature:()
+closeCerenkValid	RunAction.cc	/^void RunAction::closeCerenkValid()$/;"	f	class:RunAction	signature:()
+closeCoulombValid	RunAction.cc	/^void RunAction::closeCoulombValid()$/;"	f	class:RunAction	signature:()
+countingCerenkovs	EventAction.cc	/^void EventAction::countingCerenkovs(G4double trackLength)$/;"	f	class:EventAction	signature:(G4double trackLength)
+countingCerenkovs	EventAction.cc	/^void EventAction::countingCerenkovs(G4int cphoton)$/;"	f	class:EventAction	signature:(G4int cphoton)
+countingPho	CerenkovValidation.cc	/^void CerenkovValidation::countingPho(int opt)$/;"	f	class:CerenkovValidation	signature:(int opt)
+creatHistStopPow	CerValHistograms.cc	/^void CerValHistograms::creatHistStopPow(G4int runId)$/;"	f	class:CerValHistograms	signature:(G4int runId)
+creatingHist	CerValHistograms.cc	/^void CerValHistograms::creatingHist(G4int runId)$/;"	f	class:CerValHistograms	signature:(G4int runId)
+cut	PhysicsListMessenger.cc	/^        G4double cut = fAllCutCMD->GetNewDoubleValue(newValue);$/;"	l
+decay	PhysicsList.cc	/^    G4VProcess* decay;$/;"	l
+decayWithSpin	PhysicsList.cc	/^    G4DecayWithSpin* decayWithSpin = new G4DecayWithSpin();$/;"	l
+density	grdFloor.cc	/^  G4double density = 2.65*g\/cm3;$/;"	l
+dimenWorld	world.cc	/^  G4double dimenWorld = 200.*m;$/;"	l
+distInject	histosRun.cc	/^void histosRun::distInject(int part)$/;"	f	class:histosRun	signature:(int part)
+doHistCerPhoCm	CerValHistograms.cc	/^void CerValHistograms::doHistCerPhoCm(G4double nphoVcm)$/;"	f	class:CerValHistograms	signature:(G4double nphoVcm)
+doOpwater	water.cc	/^G4MaterialPropertiesTable* water::doOpwater()$/;"	f	class:water	signature:()
+doOpwater	water2.cc	/^G4MaterialPropertiesTable* water2::doOpwater()$/;"	f	class:water2	signature:()
+doPulse	PMTSD.cc	/^void PMTSD::doPulse(G4double time)\/\/const G4Track* track, G4double time)$/;"	f	class:PMTSD	signature:(G4double time)
+doWater	water.cc	/^G4Material* water::doWater()$/;"	f	class:water	signature:()
+doWater	water2.cc	/^G4Material* water2::doWater()$/;"	f	class:water2	signature:()
+e	PhysicsList.cc	/^        G4VPhysicsConstructor* e = (*p);$/;"	l
+e_paralle	PrimaryGeneratorAction.cc	/^ G4ThreeVector e_paralle    = e_perpend.cross(kphoton);$/;"	l
+elO	grdFloor.cc	/^	G4Element* elO  $/;"	l
+elSi	grdFloor.cc	/^  G4Element* elSi $/;"	l
+elem	PhysicsList.cc	/^       G4VPhysicsConstructor* elem =$/;"	l
+emSaturation	OpticalPhysics.cc	/^  G4EmSaturation* emSaturation = G4LossTableManager::Instance()->EmSaturation();$/;"	l
+energy_water	water.cc	/^  G4double energy_water[] = $/;"	l
+erase	PhysicsList.cc	/^           fPhysicsVector->erase(p);$/;"	p	file:	signature:(p)
+eventAction	ActionInitialization.cc	/^  EventAction* eventAction = new EventAction(runAction, primaryGenAction);$/;"	l
+fillCerenPho	histosRun.cc	/^void histosRun::fillCerenPho(int optFillPho)$/;"	f	class:histosRun	signature:(int optFillPho)
+fillCerenPhoElect	histosRun.cc	/^void histosRun::fillCerenPhoElect(int optFillPhoElect)$/;"	f	class:histosRun	signature:(int optFillPhoElect)
+fillCerenPhoPmt	histosRun.cc	/^void histosRun::fillCerenPhoPmt(int optFillPhoPmt)$/;"	f	class:histosRun	signature:(int optFillPhoPmt)
+fillHistPhoVcm	RunAction.cc	/^void RunAction::fillHistPhoVcm()$/;"	f	class:RunAction	signature:()
+fillTrackLengthDetec	histosRun.cc	/^void histosRun::fillTrackLengthDetec(int optFillLengthDectec)$/;"	f	class:histosRun	signature:(int optFillLengthDectec)
+getLogVolume	grdFloor.cc	/^G4LogicalVolume* grdFloor::getLogVolume()$/;"	f	class:grdFloor	signature:()
+getLogVolume	wcdLagoCalo.cc	/^G4LogicalVolume* wcdLagoCalo::getLogVolume()$/;"	f	class:wcdLagoCalo	signature:()
+getLogVolume	wcdLagoCont.cc	/^G4LogicalVolume* wcdLagoCont::getLogVolume()$/;"	f	class:wcdLagoCont	signature:()
+getLogVolume	wcdpmt.cc	/^G4LogicalVolume* wcdpmt::getLogVolume()$/;"	f	class:wcdpmt	signature:()
+getLogVolume	world.cc	/^G4LogicalVolume* world::getLogVolume()$/;"	f	class:world	signature:()
+getLogVolume	worldGround.cc	/^G4LogicalVolume* worldGround::getLogVolume()$/;"	f	class:worldGround	signature:()
+getPhysVolume	DetectorConstruction.cc	/^  delete grd->getPhysVolume();$/;"	p	file:	signature:()
+getPhysVolume	grdFloor.cc	/^G4VPhysicalVolume* grdFloor::getPhysVolume()$/;"	f	class:grdFloor	signature:()
+getPhysVolume	wcdLagoCalo.cc	/^G4VPhysicalVolume* wcdLagoCalo::getPhysVolume()$/;"	f	class:wcdLagoCalo	signature:()
+getPhysVolume	wcdLagoCont.cc	/^G4VPhysicalVolume* wcdLagoCont::getPhysVolume()$/;"	f	class:wcdLagoCont	signature:()
+getPhysVolume	wcdpmt.cc	/^G4VPhysicalVolume* wcdpmt::getPhysVolume()$/;"	f	class:wcdpmt	signature:()
+getPhysVolume	world.cc	/^G4VPhysicalVolume* world::getPhysVolume()$/;"	f	class:world	signature:()
+getPhysVolume	worldGround.cc	/^G4VPhysicalVolume* worldGround::getPhysVolume()$/;"	f	class:worldGround	signature:()
+grdFloor	grdFloor.cc	/^grdFloor::grdFloor()$/;"	f	class:grdFloor	signature:()
+grdFloor::DefineMaterials	grdFloor.cc	/^void grdFloor::DefineMaterials()$/;"	f	class:grdFloor	signature:()
+grdFloor::buildDetector	grdFloor.cc	/^void grdFloor::buildDetector(G4double grd_size, G4LogicalVolume* log_mother, G4bool* overLaps)$/;"	f	class:grdFloor	signature:(G4double grd_size, G4LogicalVolume* log_mother, G4bool* overLaps)
+grdFloor::getLogVolume	grdFloor.cc	/^G4LogicalVolume* grdFloor::getLogVolume()$/;"	f	class:grdFloor	signature:()
+grdFloor::getPhysVolume	grdFloor.cc	/^G4VPhysicalVolume* grdFloor::getPhysVolume()$/;"	f	class:grdFloor	signature:()
+grdFloor::grdFloor	grdFloor.cc	/^grdFloor::grdFloor()$/;"	f	class:grdFloor	signature:()
+grdFloor::~grdFloor	grdFloor.cc	/^grdFloor::~grdFloor()$/;"	f	class:grdFloor	signature:()
+histName	CerValHistograms.cc	/^  G4String histName = "histPhoVcm";$/;"	l
+histName	CerValHistograms.cc	/^  G4String histName = "histStopPowWater";$/;"	l
+histosRun	histosRun.cc	/^histosRun::histosRun()$/;"	f	class:histosRun	signature:()
+histosRun::cerenPho	histosRun.cc	/^void histosRun::cerenPho(int optCerenPho)$/;"	f	class:histosRun	signature:(int optCerenPho)
+histosRun::cerenPhoElect	histosRun.cc	/^void histosRun::cerenPhoElect(int optCerenPhoElect, int wl)$/;"	f	class:histosRun	signature:(int optCerenPhoElect, int wl)
+histosRun::cerenPhoPmt	histosRun.cc	/^void histosRun::cerenPhoPmt(int optCerenPhoPmt)$/;"	f	class:histosRun	signature:(int optCerenPhoPmt)
+histosRun::distInject	histosRun.cc	/^void histosRun::distInject(int part)$/;"	f	class:histosRun	signature:(int part)
+histosRun::fillCerenPho	histosRun.cc	/^void histosRun::fillCerenPho(int optFillPho)$/;"	f	class:histosRun	signature:(int optFillPho)
+histosRun::fillCerenPhoElect	histosRun.cc	/^void histosRun::fillCerenPhoElect(int optFillPhoElect)$/;"	f	class:histosRun	signature:(int optFillPhoElect)
+histosRun::fillCerenPhoPmt	histosRun.cc	/^void histosRun::fillCerenPhoPmt(int optFillPhoPmt)$/;"	f	class:histosRun	signature:(int optFillPhoPmt)
+histosRun::fillTrackLengthDetec	histosRun.cc	/^void histosRun::fillTrackLengthDetec(int optFillLengthDectec)$/;"	f	class:histosRun	signature:(int optFillLengthDectec)
+histosRun::histosRun	histosRun.cc	/^histosRun::histosRun()$/;"	f	class:histosRun	signature:()
+histosRun::initHistos	histosRun.cc	/^void histosRun::initHistos()$/;"	f	class:histosRun	signature:()
+histosRun::meanPulse	histosRun.cc	/^void histosRun::meanPulse(int optMeanPulse, double time)$/;"	f	class:histosRun	signature:(int optMeanPulse, double time)
+histosRun::postInject	histosRun.cc	/^void histosRun::postInject(double partPosX, double partPosY)$/;"	f	class:histosRun	signature:(double partPosX, double partPosY)
+histosRun::trackLengthDetec	histosRun.cc	/^void histosRun::trackLengthDetec(int optLengthDectec, double length)$/;"	f	class:histosRun	signature:(int optLengthDectec, double length)
+histosRun::~histosRun	histosRun.cc	/^histosRun::~histosRun()$/;"	f	class:histosRun	signature:()
+id	CerValHistograms.cc	/^  int id = runId;$/;"	l
+initHistos	RunAction.cc	/^    histRun->initHistos();$/;"	p	file:	signature:()
+initHistos	histosRun.cc	/^void histosRun::initHistos()$/;"	f	class:histosRun	signature:()
+kphoton	PrimaryGeneratorAction.cc	/^ G4ThreeVector kphoton = fParticleGun->GetParticleMomentumDirection();$/;"	l
+line	PrimarySpectrum.cc	/^	char line[256];$/;"	l
+meanPulse	histosRun.cc	/^void histosRun::meanPulse(int optMeanPulse, double time)$/;"	f	class:histosRun	signature:(int optMeanPulse, double time)
+message	PhysicsList.cc	/^       G4ExceptionDescription message;$/;"	l
+mie_water	water.cc	/^  G4double mie_water[] = $/;"	l
+mie_water	water2.cc	/^  G4double mie_water[] = $/;"	l
+mie_water_const	water.cc	/^  G4double mie_water_const[3]={0.99,0.99,0.8};$/;"	l
+mie_water_const	water2.cc	/^  G4double mie_water_const[3]={0.4, 0., 1};$/;"	l
+mode	PhysicsListMessenger.cc	/^       G4VDecayChannel* mode = $/;"	l
+mode	PhysicsListMessenger.cc	/^       G4VDecayChannel* mode =$/;"	l
+modul2	PrimaryGeneratorAction.cc	/^ G4double modul2       = product*product;$/;"	l
+momentum	PrimaryGeneratorMessenger.cc	/^  std::string momentum = "momentum " + sPx + " " + sPy + " " + sPz + " GeV";$/;"	l
+myMPT1	water.cc	/^  G4MaterialPropertiesTable* myMPT1 $/;"	l
+myMPT1	water2.cc	/^  G4MaterialPropertiesTable* myMPT1 $/;"	l
+nEntries	water.cc	/^  const G4int nEntries = sizeof(photonEnergy)\/sizeof(G4double);$/;"	l
+nEntries	water2.cc	/^  const G4int nEntries = sizeof(photonEnergy)\/sizeof(G4double);$/;"	l
+n_particle	PrimaryGeneratorAction.cc	/^  G4int n_particle = 1;$/;"	l
+name	PhysicsList.cc	/^       message << "PhysicsList::RemoveFromEMPhysicsList "<< name << "not found";$/;"	l
+name	PhysicsListMessenger.cc	/^        G4String name = newValue;$/;"	l
+natoms	grdFloor.cc	/^  G4int natoms;$/;"	l
+nfi	PrimarySpectrum.cc	/^  const char* nfi = name.c_str();$/;"	l
+nist	wcdLagoCont.cc	/^  G4NistManager* nist = G4NistManager::Instance();$/;"	l
+nist	wcdpmt.cc	/^  G4NistManager* nist = G4NistManager::Instance();$/;"	l
+nist	world.cc	/^  G4NistManager* nist = G4NistManager::Instance();$/;"	l
+nist	worldGround.cc	/^  G4NistManager* nist = G4NistManager::Instance();$/;"	l
+numentries_water	water.cc	/^  const G4int numentries_water $/;"	l
+o	ExtraPhysics.cc	/^            std::ostringstream o;$/;"	l
+o	OpticalPhysics.cc	/^       std::ostringstream o;$/;"	l
+o	OpticalPhysics.cc	/^     std::ostringstream o;$/;"	l
+opWaterSurface	wcdLagoCalo.cc	/^  G4OpticalSurface* opWaterSurface $/;"	l
+openFile	PrimarySpectrum.cc	/^int PrimarySpectrum::openFile(std::string name)$/;"	f	class:PrimarySpectrum	signature:(std::string name)
+openFile	PrimarySpectrumMessenger.cc	/^    fSpectrum->openFile(inFl);$/;"	p	file:	signature:(inFl)
+pManager	OpticalPhysics.cc	/^  G4ProcessManager* pManager =$/;"	l
+pManager	PhysicsList.cc	/^    G4ProcessManager* pManager;$/;"	l
+particle	ExtraPhysics.cc	/^        G4ParticleDefinition* particle = particleIterator->value();$/;"	l
+particle	OpticalPhysics.cc	/^    G4ParticleDefinition* particle = particleIterator->value();$/;"	l
+particle	PhysicsList.cc	/^      G4ParticleDefinition* particle = particleIterator->value();$/;"	l
+particle	PrimaryGeneratorAction.cc	/^  G4ParticleDefinition* particle $/;"	l
+particleDef	PhysicsListMessenger.cc	/^       G4ParticleDefinition* particleDef = particleTable->FindParticle("pi+");$/;"	l
+particleIterator	ExtraPhysics.cc	/^    auto particleIterator=GetParticleIterator();$/;"	l
+particleIterator	OpticalPhysics.cc	/^  auto particleIterator=GetParticleIterator();$/;"	l
+particleIterator	PhysicsList.cc	/^  auto particleIterator=GetParticleIterator();$/;"	l
+particleName	ExtraPhysics.cc	/^            o << "Particle " << particleName << "without a Process Manager";$/;"	l
+particleName	ExtraPhysics.cc	/^        G4String particleName = particle->GetParticleName();$/;"	l
+particleName	OpticalPhysics.cc	/^       o << "Particle " << particleName << "without a Process Manager";$/;"	l
+particleName	OpticalPhysics.cc	/^    G4String particleName = particle->GetParticleName();$/;"	l
+particleTable	PhysicsListMessenger.cc	/^       G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();$/;"	l
+particleTable	PrimaryGeneratorAction.cc	/^  G4ParticleTable* particleTable $/;"	l
+photonEnergy	water.cc	/^  G4double photonEnergy[] =$/;"	l
+photonEnergy	water2.cc	/^  G4double photonEnergy[] =$/;"	l
+phys	PhysicsList.cc	/^    G4VModularPhysicsList* phys = NULL;$/;"	l
+pmanager	ExtraPhysics.cc	/^        G4ProcessManager* pmanager = particle->GetProcessManager();$/;"	l
+pmanager	PhysicsList.cc	/^      G4ProcessManager* pmanager = particle->GetProcessManager();$/;"	l
+polar	PrimaryGeneratorAction.cc	/^ G4ThreeVector polar = std::cos(angle)*e_paralle + std::sin(angle)*e_perpend;$/;"	l
+poldecay	PhysicsList.cc	/^    G4PionDecayMakeSpin* poldecay = new G4PionDecayMakeSpin();$/;"	l
+posZ	grdFloor.cc	/^  G4double posZ = grd_size + grd_size\/1.9; \/\/ *  0.3;$/;"	l
+postInject	histosRun.cc	/^void histosRun::postInject(double partPosX, double partPosY)$/;"	f	class:histosRun	signature:(double partPosX, double partPosY)
+prec	SteppingVerbose.cc	/^  G4int prec = G4cout.precision(3);$/;"	l
+precision	SteppingVerbose.cc	/^  G4cout.precision(prec);$/;"	p	file:	signature:(prec)
+primaryGenAction	ActionInitialization.cc	/^  PrimaryGeneratorAction* primaryGenAction = new PrimaryGeneratorAction(parCrk);$/;"	l
+primaryMomento	PrimarySpectrum.cc	/^void PrimarySpectrum::primaryMomento()$/;"	f	class:PrimarySpectrum	signature:()
+primaryPosition	PrimarySpectrum.cc	/^void PrimarySpectrum::primaryPosition()$/;"	f	class:PrimarySpectrum	signature:()
+printtingCerPhoCounting	CerenkovValidation.cc	/^void CerenkovValidation::printtingCerPhoCounting(int opt)$/;"	f	class:CerenkovValidation	signature:(int opt)
+processTable	PhysicsList.cc	/^    G4ProcessTable* processTable = G4ProcessTable::GetProcessTable();$/;"	l
+product	PrimaryGeneratorAction.cc	/^ G4ThreeVector product = normal.cross(kphoton);$/;"	l
+push_back	PhysicsList.cc	/^                    push_back(fOpticalPhysics = new OpticalPhysics(toggle));$/;"	p	file:	signature:(fOpticalPhysics = new OpticalPhysics(toggle))
+push_back	histosRun.cc	/^      cAllSpecPhoElect.push_back(wl);;$/;"	p	file:	signature:(wl)
+push_back	histosRun.cc	/^      cElecSpecPhoElect.push_back(wl);;$/;"	p	file:	signature:(wl)
+push_back	histosRun.cc	/^      cGammSpecPhoElect.push_back(wl);;$/;"	p	file:	signature:(wl)
+push_back	histosRun.cc	/^      cHadrSpecPhoElect.push_back(wl);;$/;"	p	file:	signature:(wl)
+push_back	histosRun.cc	/^      cMuonSpecPhoElect.push_back(wl);;$/;"	p	file:	signature:(wl)
+push_back	histosRun.cc	/^      cNeutSpecPhoElect.push_back(wl);;$/;"	p	file:	signature:(wl)
+px	PrimaryGeneratorMessenger.cc	/^  double px = direction.x();$/;"	l
+pxSemiAxis	wcdpmt.cc	/^  G4double pxSemiAxis = 10.1*cm;$/;"	l
+py	PrimaryGeneratorMessenger.cc	/^  double py = direction.y();$/;"	l
+pySemiAxis	wcdpmt.cc	/^  G4double pySemiAxis = 10.1*cm;$/;"	l
+pz	PrimaryGeneratorMessenger.cc	/^  double pz = direction.z();$/;"	l
+pzBottomCut	wcdpmt.cc	/^  G4double pzBottomCut = -pzSemiAxis;$/;"	l
+pzSemiAxis	wcdpmt.cc	/^  G4double pzSemiAxis = 6.5*cm;$/;"	l
+pzTopCut	wcdpmt.cc	/^  G4double pzTopCut = 0.*cm;$/;"	l
+refractiveIndex1	water.cc	/^  G4double refractiveIndex1[] =$/;"	l
+refractiveIndex1	water2.cc	/^  G4double refractiveIndex1[] =$/;"	l
+reset	ExtraPhysics.cc	/^    particleIterator->reset();$/;"	p	file:	signature:()
+reset	OpticalPhysics.cc	/^  particleIterator->reset();$/;"	p	file:	signature:()
+reset	PhysicsList.cc	/^  particleIterator->reset();$/;"	p	file:	signature:()
+resetPMTSD	PMTSD.cc	/^void PMTSD::resetPMTSD()$/;"	f	class:PMTSD	signature:()
+resetting	CerenkovValidation.cc	/^void CerenkovValidation::resetting()$/;"	f	class:CerenkovValidation	signature:()
+resetting	EventAction.cc	/^  fRunAction->cerVali->resetting();$/;"	p	file:	signature:()
+runAction	ActionInitialization.cc	/^  RunAction* runAction = new RunAction();$/;"	l
+runAction	ActionInitialization.cc	/^  RunAction* runAction = new RunAction;$/;"	l
+sPx	PrimaryGeneratorMessenger.cc	/^  std::string sPx = std::to_string(px);$/;"	l
+sPy	PrimaryGeneratorMessenger.cc	/^  std::string sPy = std::to_string(py);$/;"	l
+sPz	PrimaryGeneratorMessenger.cc	/^  std::string sPz = std::to_string(pz);$/;"	l
+search	PrimarySpectrum.cc	/^	G4int search = 1;$/;"	l
+setInitPosZ	PrimarySpectrum.cc	/^void PrimarySpectrum::setInitPosZ(G4double zz)$/;"	f	class:PrimarySpectrum	signature:(G4double zz)
+setRoArea	PrimarySpectrum.cc	/^void PrimarySpectrum::setRoArea(G4double rr)$/;"	f	class:PrimarySpectrum	signature:(G4double rr)
+setWcdHight	DetectorConstruction.cc	/^void DetectorConstruction::setWcdHight( G4double wcdH )$/;"	f	class:DetectorConstruction	signature:( G4double wcdH )
+setWcdRadius	DetectorConstruction.cc	/^void DetectorConstruction::setWcdRadius( G4double wcdR )$/;"	f	class:DetectorConstruction	signature:( G4double wcdR )
+startCerenkValid	RunAction.cc	/^void RunAction::startCerenkValid()$/;"	f	class:RunAction	signature:()
+startCoulombValid	RunAction.cc	/^void RunAction::startCoulombValid()$/;"	f	class:RunAction	signature:()
+stepAction	ActionInitialization.cc	/^  SteppingAction* stepAction = new SteppingAction(eventAction);$/;"	l
+success	PhysicsList.cc	/^    G4bool success = false;$/;"	l
+symbol	grdFloor.cc	/^  G4String symbol;$/;"	l
+tN2ndariesTot	SteppingVerbose.cc	/^      G4int tN2ndariesTot = fN2ndariesAtRestDoIt +$/;"	l
+table	PhysicsListMessenger.cc	/^       G4DecayTable* table = new G4DecayTable();$/;"	l
+testCmd	PrimaryGeneratorMessenger.cc	/^  G4UIcmdWithADoubleAndUnit* testCmd = new G4UIcmdWithADoubleAndUnit("gun\/energy 100 MeV", this);$/;"	l
+tmp	wcdLagoCalo.cc	/^  water* tmp = new water();$/;"	l
+tmpc	PrimarySpectrum.cc	/^	char tmpc[256];$/;"	l
+track	SteppingAction.cc	/^  G4Track* track = step->GetTrack();$/;"	l
+trackLengthDetec	histosRun.cc	/^void histosRun::trackLengthDetec(int optLengthDectec, double length)$/;"	f	class:histosRun	signature:(int optLengthDectec, double length)
+water	water.cc	/^water::water()$/;"	f	class:water	signature:()
+water2	water2.cc	/^water2::water2()$/;"	f	class:water2	signature:()
+water2::doOpwater	water2.cc	/^G4MaterialPropertiesTable* water2::doOpwater()$/;"	f	class:water2	signature:()
+water2::doWater	water2.cc	/^G4Material* water2::doWater()$/;"	f	class:water2	signature:()
+water2::water2	water2.cc	/^water2::water2()$/;"	f	class:water2	signature:()
+water2::~water2	water2.cc	/^water2::~water2()$/;"	f	class:water2	signature:()
+water::doOpwater	water.cc	/^G4MaterialPropertiesTable* water::doOpwater()$/;"	f	class:water	signature:()
+water::doWater	water.cc	/^G4Material* water::doWater()$/;"	f	class:water	signature:()
+water::water	water.cc	/^water::water()$/;"	f	class:water	signature:()
+water::~water	water.cc	/^water::~water()$/;"	f	class:water	signature:()
+wcdLagoCalo	wcdLagoCalo.cc	/^wcdLagoCalo::wcdLagoCalo()$/;"	f	class:wcdLagoCalo	signature:()
+wcdLagoCalo::DefineMaterials	wcdLagoCalo.cc	/^void wcdLagoCalo::DefineMaterials()$/;"	f	class:wcdLagoCalo	signature:()
+wcdLagoCalo::buildDetector	wcdLagoCalo.cc	/^void wcdLagoCalo::buildDetector(G4LogicalVolume* log_mother, G4VPhysicalVolume* tank_phys, G4bool* overLaps, G4double radius, G4double hight)$/;"	f	class:wcdLagoCalo	signature:(G4LogicalVolume* log_mother, G4VPhysicalVolume* tank_phys, G4bool* overLaps, G4double radius, G4double hight)
+wcdLagoCalo::getLogVolume	wcdLagoCalo.cc	/^G4LogicalVolume* wcdLagoCalo::getLogVolume()$/;"	f	class:wcdLagoCalo	signature:()
+wcdLagoCalo::getPhysVolume	wcdLagoCalo.cc	/^G4VPhysicalVolume* wcdLagoCalo::getPhysVolume()$/;"	f	class:wcdLagoCalo	signature:()
+wcdLagoCalo::wcdLagoCalo	wcdLagoCalo.cc	/^wcdLagoCalo::wcdLagoCalo()$/;"	f	class:wcdLagoCalo	signature:()
+wcdLagoCalo::~wcdLagoCalo	wcdLagoCalo.cc	/^wcdLagoCalo::~wcdLagoCalo()$/;"	f	class:wcdLagoCalo	signature:()
+wcdLagoCont	wcdLagoCont.cc	/^wcdLagoCont::wcdLagoCont()$/;"	f	class:wcdLagoCont	signature:()
+wcdLagoCont::DefineMaterials	wcdLagoCont.cc	/^void wcdLagoCont::DefineMaterials()$/;"	f	class:wcdLagoCont	signature:()
+wcdLagoCont::buildDetector	wcdLagoCont.cc	/^void wcdLagoCont::buildDetector(G4LogicalVolume* log_mother, G4bool* overLaps, G4double radius, G4double hight)$/;"	f	class:wcdLagoCont	signature:(G4LogicalVolume* log_mother, G4bool* overLaps, G4double radius, G4double hight)
+wcdLagoCont::getLogVolume	wcdLagoCont.cc	/^G4LogicalVolume* wcdLagoCont::getLogVolume()$/;"	f	class:wcdLagoCont	signature:()
+wcdLagoCont::getPhysVolume	wcdLagoCont.cc	/^G4VPhysicalVolume* wcdLagoCont::getPhysVolume()$/;"	f	class:wcdLagoCont	signature:()
+wcdLagoCont::wcdLagoCont	wcdLagoCont.cc	/^wcdLagoCont::wcdLagoCont()$/;"	f	class:wcdLagoCont	signature:()
+wcdLagoCont::~wcdLagoCont	wcdLagoCont.cc	/^wcdLagoCont::~wcdLagoCont()$/;"	f	class:wcdLagoCont	signature:()
+wcdpmt	wcdpmt.cc	/^wcdpmt::wcdpmt()$/;"	f	class:wcdpmt	signature:()
+wcdpmt::DefineMaterials	wcdpmt.cc	/^void wcdpmt::DefineMaterials()$/;"	f	class:wcdpmt	signature:()
+wcdpmt::buildDetector	wcdpmt.cc	/^void wcdpmt::buildDetector(G4LogicalVolume* log_mother, G4double postZ, G4bool* overLaps)$/;"	f	class:wcdpmt	signature:(G4LogicalVolume* log_mother, G4double postZ, G4bool* overLaps)
+wcdpmt::getLogVolume	wcdpmt.cc	/^G4LogicalVolume* wcdpmt::getLogVolume()$/;"	f	class:wcdpmt	signature:()
+wcdpmt::getPhysVolume	wcdpmt.cc	/^G4VPhysicalVolume* wcdpmt::getPhysVolume()$/;"	f	class:wcdpmt	signature:()
+wcdpmt::wcdpmt	wcdpmt.cc	/^wcdpmt::wcdpmt()$/;"	f	class:wcdpmt	signature:()
+wcdpmt::~wcdpmt	wcdpmt.cc	/^wcdpmt::~wcdpmt()$/;"	f	class:wcdpmt	signature:()
+world	world.cc	/^world::world()$/;"	f	class:world	signature:()
+world::DefineMaterials	world.cc	/^void world::DefineMaterials()$/;"	f	class:world	signature:()
+world::buildDetector	world.cc	/^void world::buildDetector(G4bool* overLaps)$/;"	f	class:world	signature:(G4bool* overLaps)
+world::getLogVolume	world.cc	/^G4LogicalVolume* world::getLogVolume()$/;"	f	class:world	signature:()
+world::getPhysVolume	world.cc	/^G4VPhysicalVolume* world::getPhysVolume()$/;"	f	class:world	signature:()
+world::world	world.cc	/^world::world()$/;"	f	class:world	signature:()
+world::~world	world.cc	/^world::~world()$/;"	f	class:world	signature:()
+worldGround	worldGround.cc	/^worldGround::worldGround()$/;"	f	class:worldGround	signature:()
+worldGround::DefineMaterials	worldGround.cc	/^void worldGround::DefineMaterials()$/;"	f	class:worldGround	signature:()
+worldGround::buildDetector	worldGround.cc	/^void worldGround::buildDetector(G4LogicalVolume* log_mother, G4bool* overLaps)$/;"	f	class:worldGround	signature:(G4LogicalVolume* log_mother, G4bool* overLaps)
+worldGround::getLogVolume	worldGround.cc	/^G4LogicalVolume* worldGround::getLogVolume()$/;"	f	class:worldGround	signature:()
+worldGround::getPhysVolume	worldGround.cc	/^G4VPhysicalVolume* worldGround::getPhysVolume()$/;"	f	class:worldGround	signature:()
+worldGround::worldGround	worldGround.cc	/^worldGround::worldGround()$/;"	f	class:worldGround	signature:()
+worldGround::~worldGround	worldGround.cc	/^worldGround::~worldGround()$/;"	f	class:worldGround	signature:()
+z	grdFloor.cc	/^  G4double z;$/;"	l
+~ActionInitialization	ActionInitialization.cc	/^ActionInitialization::~ActionInitialization()$/;"	f	class:ActionInitialization	signature:()
+~CerValHistograms	CerValHistograms.cc	/^CerValHistograms::~CerValHistograms()$/;"	f	class:CerValHistograms	signature:()
+~CerValHistograms	RunAction.cc	/^    histCerVali->~CerValHistograms();$/;"	p	file:	signature:()
+~CerenkovValidation	CerenkovValidation.cc	/^CerenkovValidation::~CerenkovValidation()$/;"	f	class:CerenkovValidation	signature:()
+~DetectorConstruction	DetectorConstruction.cc	/^DetectorConstruction::~DetectorConstruction()$/;"	f	class:DetectorConstruction	signature:()
+~DetectorMessenger	DetectorMessenger.cc	/^DetectorMessenger::~DetectorMessenger()$/;"	f	class:DetectorMessenger	signature:()
+~EventAction	EventAction.cc	/^EventAction::~EventAction()$/;"	f	class:EventAction	signature:()
+~ExtraPhysics	ExtraPhysics.cc	/^ExtraPhysics::~ExtraPhysics() { }$/;"	f	class:ExtraPhysics	signature:()
+~OpticalPhysics	OpticalPhysics.cc	/^OpticalPhysics::~OpticalPhysics() { }$/;"	f	class:OpticalPhysics	signature:()
+~PMTHit	PMTHit.cc	/^PMTHit::~PMTHit()$/;"	f	class:PMTHit	signature:()
+~PMTSD	PMTSD.cc	/^PMTSD::~PMTSD()$/;"	f	class:PMTSD	signature:()
+~PhysicsList	PhysicsList.cc	/^PhysicsList::~PhysicsList()$/;"	f	class:PhysicsList	signature:()
+~PhysicsListMessenger	PhysicsListMessenger.cc	/^PhysicsListMessenger::~PhysicsListMessenger()$/;"	f	class:PhysicsListMessenger	signature:()
+~PrimaryGeneratorAction	PrimaryGeneratorAction.cc	/^PrimaryGeneratorAction::~PrimaryGeneratorAction()$/;"	f	class:PrimaryGeneratorAction	signature:()
+~PrimaryGeneratorMessenger	PrimaryGeneratorMessenger.cc	/^PrimaryGeneratorMessenger::~PrimaryGeneratorMessenger()$/;"	f	class:PrimaryGeneratorMessenger	signature:()
+~PrimarySpectrum	PrimarySpectrum.cc	/^PrimarySpectrum::~PrimarySpectrum()$/;"	f	class:PrimarySpectrum	signature:()
+~PrimarySpectrumMessenger	PrimarySpectrumMessenger.cc	/^PrimarySpectrumMessenger::~PrimarySpectrumMessenger()$/;"	f	class:PrimarySpectrumMessenger	signature:()
+~RunAction	RunAction.cc	/^RunAction::~RunAction()$/;"	f	class:RunAction	signature:()
+~StepMax	StepMax.cc	/^StepMax::~StepMax() { }$/;"	f	class:StepMax	signature:()
+~SteppingAction	SteppingAction.cc	/^SteppingAction::~SteppingAction()$/;"	f	class:SteppingAction	signature:()
+~SteppingVerbose	SteppingVerbose.cc	/^SteppingVerbose::~SteppingVerbose()$/;"	f	class:SteppingVerbose	signature:()
+~grdFloor	grdFloor.cc	/^grdFloor::~grdFloor()$/;"	f	class:grdFloor	signature:()
+~histosRun	RunAction.cc	/^  histRun->~histosRun();$/;"	p	file:	signature:()
+~histosRun	histosRun.cc	/^histosRun::~histosRun()$/;"	f	class:histosRun	signature:()
+~water	water.cc	/^water::~water()$/;"	f	class:water	signature:()
+~water2	water2.cc	/^water2::~water2()$/;"	f	class:water2	signature:()
+~wcdLagoCalo	wcdLagoCalo.cc	/^wcdLagoCalo::~wcdLagoCalo()$/;"	f	class:wcdLagoCalo	signature:()
+~wcdLagoCont	wcdLagoCont.cc	/^wcdLagoCont::~wcdLagoCont()$/;"	f	class:wcdLagoCont	signature:()
+~wcdpmt	wcdpmt.cc	/^wcdpmt::~wcdpmt()$/;"	f	class:wcdpmt	signature:()
+~world	world.cc	/^world::~world()$/;"	f	class:world	signature:()
+~worldGround	worldGround.cc	/^worldGround::~worldGround()$/;"	f	class:worldGround	signature:()

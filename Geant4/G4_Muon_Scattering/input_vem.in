@@ -1,0 +1,15 @@
+/control/verbose 0
+/tracking/verbose 1
+#
+/gun/particle geantino
+/gun/energy 1. GeV
+/gun/position 0. 0. 90. cm
+/gun/direction 0. 0. -1.
+#
+
+/detect/radio 45. cm
+/detect/hight 120. cm # No more than 4.5 m
+
+/outroot/outname outfilename.root # Name for output root file
+
+/run/beamOn 2 # Number of particles
