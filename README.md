@@ -24,7 +24,7 @@ This notebook asks the user for the important parameters for running MAGNETOCOSM
 ![merovingian](https://user-images.githubusercontent.com/31867192/212497171-37d4388f-b541-4fca-bfbc-e20f32d42b4d.png)
 This is a screenshot of the The Merovingian.ipynb notebook, used to create a MACRO input file for MAGNETOCOSMICS.
 
-## **Geant4/G4_Muong_Scattering**
+## **Geant4/G4_Muon_Scattering**
 This directory contains a Geant4 build for the study of MFS through Monte Carlo simulations of the interaction between muons and a solid volume of standard rock. This Geant4 environment is based on [the one used by the LAGO collaboration](http://wiki.lagoproject.net/index.php/Main_Page) and implemented on [this work](http://tangara.uis.edu.co/biblioweb/pags/cat/popup/pa_detalle_matbib.jsp?parametros=186435%7C%20%7C3%7C20) and [this work](https://iopscience.iop.org/article/10.1088/1748-0221/15/08/P08004/pdf) to simulate the MuTe detector. We implemented our own minor edits to facilitate the study of MFS. The changes we made were:
 * Deleting the WCD (Water Cherenkov Detector) present in the code, since we were only interested in seeing the interaction between muons and the standard rock ground.
 * Discarding particles other than muons from the output files to save space and computer power.
